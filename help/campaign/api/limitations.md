@@ -1,0 +1,136 @@
+---
+title: Recommendations & begränsningar
+description: Recommendations och begränsningar vid migrering till Campaign v8 REST API:er.
+audience: developing
+content-type: reference
+topic-tags: campaign-standard-apis
+role: Data Engineer
+level: Experienced
+mini-toc-levels: 1
+badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
+source-git-commit: 4ddde59006a72f34090a0ed4a765447c69c5f029
+workflow-type: tm+mt
+source-wordcount: '1159'
+ht-degree: 1%
+
+---
+
+# Recommendations &amp; begränsningar {#limitations}
+
+## Behörigheter och säkerhet {#permissions}
+
+### Mappning av produktprofiler
+
+I Campaign Standard fick du förhöjd administratörsrollåtkomst till API:er oavsett din tilldelade produktprofil. I Campaign v8 introduceras en annan uppsättning produktprofiler, vilket kräver mappning från produktprofiler för Campaign Standard till Campaign v8.
+
+Med migreringen läggs två produktprofiler till i dina befintliga eller redan skapade tekniska konton: Administratör och Meddelandecenter (för åtkomst till transaktionsprogrammeringsgränssnitt). Granska mappningen av produktprofiler och tilldela den produktprofil som behövs om du inte vill att Admin-produktprofilen ska mappas till ditt tekniska konto.
+
+### Klient-ID
+
+Efter migreringen rekommenderas att du använder **Klient-ID för kampanj v8** i REST-URL:er, ersätta ditt tidigare Campaign Standard-klientorganisations-ID.
+
+### Nyckelanvändning
+
+Hanteringen av PKey-värden skiljer sig mellan Campaign Standard och Campaign v8. Om du lagrade PKeys med Campaign Standard bör du se till att implementeringen dynamiskt skapar efterföljande API-anrop med PKeys eller hrefs från tidigare API-anrop.
+
+## Tillgängliga API:er {#deprecated}
+
+För närvarande är REST API:erna som listas nedan tillgängliga:
+
+* **Profiler**
+* **Tjänster och prenumerationer**
+* **Anpassade resurser**
+* **Arbetsflöden**
+
+>[!AVAILABILITY]
+>
+>För tillfället är **Transaktionsmeddelanden** REST API är inte tillgängligt.
+>
+>REST-API:erna som anges nedan är inaktuella och kan inte användas:
+>* Marknadsföringshistorik
+>* Organisationsenheter
+>* Integritetshantering
+
+## Filtrering
+
+* Om du vill använda dina filter i REST API-nyttolaster måste du redigera dem i Campaign v8 och ange ett namn att använda i dina nyttolaster. Om du vill göra det kommer du åt filtrets ytterligare parametrar från **[!UICONTROL Parameters]** och ange önskat namn i dialogrutan **[!UICONTROL Filter name in REST API]** fält.
+
+  ![](assets/api-filtering.png)
+
+
+* Det by-prefix som krävs för att använda anpassade filter behövs inte längre. Filternamnet ska användas som det är i dina förfrågningar.
+
+  Exempel:
+
+  `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/<resourceName>/<customFilterName>?<customFilterparam>=<customFilterValue>`
+
+## Ignorerade databasfält
+
+Vissa fält från databasen tas bort under migreringen. När du använder ett släppt fält returnerar REST-API:er tomma värden. I framtiden kommer alla borttagna fält att bli inaktuella och tas bort.
+
+## POST med länkade resurser
+
+När du använder följande body-format för begäran, där &quot;vehikelägare&quot; representerar länken till &quot;nms:mottagare&quot;:
+
+```
+{
+    "vehicleNumber": "20009",
+    "vehicleName": "Model E",
+    "vehicleOwner":{
+        "firstName":"tester 11",
+        "lastName":"Smith 11"
+    }
+}
+```
+
+Länkinformationen ignoreras. Följaktligen genereras en ny post under&quot;cusVehicle&quot; som endast innehåller värdena&quot;VehicleNumber&quot; och&quot;VehicleName&quot;. Länken är emellertid fortfarande null, vilket resulterar i att&quot;vehikelägare&quot; ställs in på null.
+
+I Campaign v8 inträffar ett fel när samma frågetexakthjälpstruktur används och&quot;vehikeln&quot; är kopplad till en profil. Det här felet inträffar eftersom egenskapen &quot;firstName&quot; inte känns igen som giltig för &quot;cusVehicle&quot;. En begärandetext som bara innehåller attributen utan länkfunktionerna utan några problem.
+
+## PATCH operationer
+
+* Campaign v8 stöder inte PATCH med en tom begärandetext: den returnerar statusen 204 Inget innehåll.
+* Campaign Standard har stöd för PATCH på element/attribut i ett schema, men observera att PATCH-åtgärder på plats inte stöds i Campaign v8. Om du försöker utföra ett PATCH på-plats uppstår ett internt 500-serverfel med ett felmeddelande som anger att zipCode-egenskapen inte är giltig för profile-resursen.
+
+## REST-svar
+
+I avsnittet nedan visas mindre skillnader mellan Campaign Standard- och v8 REST-svar.
+
+* För enskilda GETTER innehåller svaret href i svaret.
+* När Campaign v8 efterfrågas med attributet tillhandahåller den Count och Pagination i svaret.
+* Efter POST returneras värden från länkade resurser i svaret.
+
+## Felkoder och meddelanden
+
+I avsnittet nedan listas skillnaderna mellan felkoder och meddelanden för Campaign Standard och Campaign v8.
+
+| Scenario | Campaign Standard | Campaign v8 |
+|  ---  |  ---  |  ---  |
+| Använd en ogiltig PKey i begärandetexten | 500 - Attributet O5iRp40EGA är okänt (se definitionen av schemat Profiler (nms:receive). XTK-170036 Det gick inte att parsa uttrycket &#39;@id = @O5iRp40EGA&#39;. | 404 - Det gick inte att dekryptera PKey. (PKey=@jkledsen) |
+| Använd en ogiltig PKey i URI | 500 - Attributet O5iRp40EGA är okänt (se definitionen av schemat Profiler (nms:receive). XTK-170036 Det gick inte att parsa uttrycket &#39;@id = @O5iRp40EGA&#39;. | 404 - Det gick inte att dekryptera PKey. (PKey=@jkledsen) Slutpunkten stöds inte. (endpoint=rest/profileAndServices/profile/@jkledsen) |
+| Använda två olika raw-nycklar i URI:n och begärandetexten | 500 - RST-360011 Ett fel har inträffat - kontakta administratören. RST-360012 Inkonsekvent åtgärd för resursen service - Det går inte att uppdatera nyckeln SVC3 till SVC4. | 500 - Ett fel har inträffat. Kontakta administratören. |
+| Använda PKey i URI:n och en annan PKey i begärandetexten | 500 - Det finns redan en tjänst med samma nyckel, SVC4. PGS-220000 PostgreSQL-fel: FEL: Dubblettnyckelvärdet bryter mot den unika begränsningen &quot;nmsservice_name&quot; DETAIL: Key (sname)=(SVC4) finns redan. | 500 - Ett fel har inträffat. Kontakta administratören. |
+| Använda ett icke-befintligt raw-id i URI | 404 - RST-360011 Ett fel har inträffat. Kontakta administratören. Det gick inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl:0 (dokument med schemat service och namnet adobe_nl) | 404 - Det går inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl (dokument med schemat service och namnet adobe_nl) |
+| Använda ett icke-befintligt raw-id i begärandetexten | 404 - RST-360011 Ett fel har inträffat. Kontakta administratören. Det gick inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl (dokument med schemat service och namnet adobe_nl) | 404 - Det går inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl (dokument med schemat service och namnet adobe_nl) |
+| – | 500 - RST-360011 Ett fel har inträffat - kontakta administratören. | 500 - Ett fel har inträffat. Kontakta administratören. |
+| Infoga en profil/tjänst med ett ogiltigt enum-värde för kön (eller något annat) | 500 - RST-360011 Ett fel har inträffat - kontakta administratören. Värdet invalid är inte giltigt för nms:recipient:genusuppräkning för fältet &#39;@kön&#39; | 500 -Ett fel har inträffat - kontakta administratören. |
+
+## Profil - tidszon
+
+Med Campaign Standard visas tidszonen som en del av JSON-svaret för **profileAndServices/profile** REST API-anrop.
+
+Med Campaign v8 visas tidszonen endast för användaren som en del av **profileAndServicesExt/profile** REST API-anrop. Det är inte en del av **profileAndServices/profile** REST API-anrop eftersom det läggs till i ett utökat schema.
+
+## Arbetsflöden - Extern signalutlösare
+
+Campaign Standard Workflow GET API returnerar parameternamn som arbetsflödesinstansvariabler och deras datatyper (boolesk, sträng osv.). Detta används för att skapa korrekt formaterad JSON-begärandetext när signalen aktiveras via ett POSTS-API-anrop.
+
+Campaign v8 stöder inte variabler för annonsarbetsflödesinstanser, men förväntar sig att utvecklare ska veta vad de är. Efter migreringen måste parameterinformationen i POSTENS begärandetext konstrueras utan att parameterinformationen i GET API-svaret är tillgänglig.
+
+## Transaktionsmeddelanden
+
+* Med Campaign Standard returnerar en begäran om POST tomma fält för element och attribut i begärandetexten. Med Campaign v8 returnerar svaret värden som matchar dem i begärandetexten i stället.
+
+* När du publicerar en händelsekonfiguration visar API-förhandsgranskningspanelen REST-URL:en bredvid syntaxen för begärandebrödtexten.
+
+  Eftersom Campaign v8 inte har stöd för fältdefinitioner för händelsekonfiguration (när en händelse skapas läggs ett värde till i eventType-uppräkning) finns det ingen API-förhandsvisningspanel när en händelsetyp läggs till. REST-URL:en visas i användargränssnittet för transaktionsmeddelanden när ett transaktionsmeddelande för händelsen publiceras.
