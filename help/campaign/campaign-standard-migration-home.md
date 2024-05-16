@@ -2,13 +2,13 @@
 title: Adobe Campaign webbgränssnitt
 description: Upptäck Adobe Campaign webbgränssnitt
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: d63ad47dc2fc7836956234d812001b06172d06a4
+exl-id: eecf4e13-820d-4454-9f11-f50be565bb79
+source-git-commit: ba22719c91d44e537020d17a53ff7f8f6a929111
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 3%
 
 ---
-
 
 # Campaign Standard över till Campaign v8 {#triggers-home}
 
@@ -21,7 +21,7 @@ Dessutom kommer den här övergången att ge många fördelar:
 * Integrering med Adobe Experience Platform
 * Enhetligt användargränssnitt och enhetlig upplevelse
 
-Mer information om nyckelfunktioner och konceptskillnader finns i [den här sidan](https://experienceleague.adobe.com/en/docs/campaign-web/v8/rn/acs-migration.html).
+Mer information om nyckelfunktioner och konceptskillnader finns i [den här sidan](https://experienceleague.adobe.com/en/docs/campaign-web/v8/release-notes/acs-migration).
 
 ## Nyheter
 
