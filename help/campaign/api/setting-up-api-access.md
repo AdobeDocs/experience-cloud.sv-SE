@@ -7,10 +7,11 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 84b72258789ba61016deb813e93bdca0ea142712
+exl-id: efbbd0cd-9c56-4ad0-8bcb-efba4b63c28b
+source-git-commit: 18979fea28f4f3adce1139293203a59876831313
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 30%
+source-wordcount: '392'
+ht-degree: 27%
 
 ---
 
@@ -24,7 +25,7 @@ Adobe Campaign Standard API-åtkomst konfigureras enligt stegen nedan. Varje ste
 
 1. **Kontrollera att du har ett digitalt certifikat** eller skapa ett vid behov. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
 1. **Skapa en ny integrering av Adobe Campaign Service** in [Adobe Developer](https://developer.adobe.com/) och konfigurera det. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet ...).
-1. **Skapa en JSON-webbtoken (JWT)** från de inloggningsuppgifter som tidigare genererats och signera den med din privata nyckel. JWT kodar all identitets- och säkerhetsinformation som Adobe behöver för att verifiera din identitet och ge dig åtkomst till API:t.
+1. **Skapa en OAuth Server-till-server** genom att följa dessa [implementeringssteg](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
 
    >[!IMPORTANT]
    >
@@ -32,8 +33,6 @@ Adobe Campaign Standard API-åtkomst konfigureras enligt stegen nedan. Varje ste
    >* [Migrering](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
    >* [Implementering](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
    >* [Vanliga frågor om JWT-borttagning](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/faqs/)
-
-1. **Byt ut din JWT mot en åtkomsttoken** genom en begäran om POST. Denna åtkomsttoken måste användas i varje rubrik för dina API-begäranden.
 
 För att upprätta en säker tjänst-till-tjänst Adobe I/O API-session måste varje begäran till en Adobe-tjänst innehålla informationen nedan i auktoriseringshuvudet.
 
