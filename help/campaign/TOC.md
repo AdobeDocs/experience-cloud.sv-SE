@@ -4,10 +4,10 @@ user-guide-description: Adobe Campaign v8
 breadcrumb-title: Adobe Campaign v8
 solution: Experience Cloud
 role: User
-source-git-commit: dfe80854447b2a49b53908947b7814c7b8e29fa5
+source-git-commit: 0650d42102216c353c5843322d01af5af80d2e5c
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 72%
+source-wordcount: '159'
+ht-degree: 70%
 
 ---
 
@@ -39,6 +39,7 @@ ht-degree: 72%
       + [Lägga till visualiseringar](reporting/adding-visualizations.md)
       + [Lägga till komponenter](reporting/adding-components.md)
       + [Skapa en anpassad profildimension](reporting/creating-a-custom-profile-dimension.md)
+      + [Dynamiskt användningsavtal för rapportering](reporting/pii-agreement.md)
 + Varumärke {#branding}
    + [Om Varumärkning](branding/branding-gs.md)
    + [Konfigurera ett varumärke](branding/branding-configure.md)
