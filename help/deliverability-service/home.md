@@ -16,4 +16,4 @@ Konsulter och verksamhetsteam som arbetar med slutprodukter måste utföra flera
 
 Följande funktion är tillgänglig:
 
-**Global Suppression List** - Den här funktionen ska inte visas för kunderna, vare sig för visning eller för uppdateringar. Listan måste dock kontinuerligt övervakas och uppdateras både manuellt (av Deliverability Team) och automatiskt (av en tredjepartsleverantör: Blackbox) . [Läs mer](global-suppression-list.md)
+**Global Suppression List** - Den här funktionen ska inte visas för kunderna, varken för visning eller för uppdateringar. Listan måste dock övervakas och uppdateras kontinuerligt både manuellt (av Deliverability Team) och automatiskt (av en tredjepartsleverantör: Blackbox). [Läs mer](global-suppression-list.md)

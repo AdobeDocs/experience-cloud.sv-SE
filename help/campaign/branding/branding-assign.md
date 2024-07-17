@@ -6,7 +6,8 @@ context-tags: branding,overview;branding,main
 role: Admin
 level: Experienced
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 51abadc86b97097d13824651d8c50d4ddd014a51
+exl-id: 8f6a5255-0245-497b-880f-d91ea82ee19e
+source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 19%
@@ -39,15 +40,15 @@ När mallen har skapats kan du koppla den till ett varumärke. Så här gör du:
 
    ![](assets/branding_assign_V8_1.png)
 
-1. Öppna **[!UICONTROL Properties]** av den leveransmall du valt.
+1. Få åtkomst till **[!UICONTROL Properties]** för den valda leveransmallen.
 
    ![](assets/branding_assign_V8_2.png)
 
-1. Från **[!UICONTROL General]** väljer du ditt varumärke på **[!UICONTROL Branding]** nedrullningsbar meny.
+1. Välj ditt varumärke i listrutan **[!UICONTROL Branding]** på fliken **[!UICONTROL General]**.
 
    ![](assets/branding_assign_V8_3.png)
 
-1. När konfigurationen är klar väljer du **OK**.
+1. Välj **OK** när du har konfigurerat den.
 
 Nu kan du använda den här mallen för att skicka leveranser.
 
@@ -57,7 +58,7 @@ Om du vill skapa en leveransmall kan du duplicera en inbyggd mall, konvertera en
 
 När mallen har skapats kan du koppla den till ett varumärke. Så här gör du:
 
-1. Gå till **[!UICONTROL Templates]** -fliken, från **[!UICONTROL Deliveries]** vänster meny och välj en leveransmall.
+1. Bläddra till fliken **[!UICONTROL Templates]** från den vänstra menyn i **[!UICONTROL Deliveries]** och välj en leveransmall.
 
    ![](assets/branding_assign_web_1.png)
 
@@ -65,7 +66,7 @@ När mallen har skapats kan du koppla den till ett varumärke. Så här gör du:
 
    ![](assets/branding_assign_web_2.png)
 
-1. Från **[!UICONTROL Delivery]** -fliken, gå till **[!UICONTROL Branding]** och välj det varumärke som du vill länka till mallen.
+1. Gå till fältet **[!UICONTROL Branding]** på fliken **[!UICONTROL Delivery]** och markera det varumärke som du vill länka till mallen.
 
    ![](assets/branding_assign_web_3.png)
 
@@ -83,31 +84,31 @@ Nu kan du använda den här mallen för att skicka leveranser.
 
 Följ stegen nedan för att skapa en ny fristående leverans.
 
-1. Om du vill skapa en ny leverans går du till **[!UICONTROL Campaigns]** -fliken.
+1. Bläddra till fliken **[!UICONTROL Campaigns]** om du vill skapa en ny leverans.
 
-1. Klicka **[!UICONTROL Deliveries]** och klicka på **[!UICONTROL Create]** ovanför listan över befintliga leveranser.
+1. Klicka på **[!UICONTROL Deliveries]** och klicka på knappen **[!UICONTROL Create]** ovanför listan över befintliga leveranser.
 
    ![](assets/branding_assign_V8_4.png)
 
 1. Välj en leveransmall.
 
-1. Öppna **[!UICONTROL Properties]** av den leveransmall du valt.
+1. Få åtkomst till **[!UICONTROL Properties]** för den valda leveransmallen.
 
    ![](assets/branding_assign_V8_5.png)
 
-1. Från **[!UICONTROL General]** väljer du ditt varumärke på **[!UICONTROL Branding]** nedrullningsbar meny.
+1. Välj ditt varumärke i listrutan **[!UICONTROL Branding]** på fliken **[!UICONTROL General]**.
 
    ![](assets/branding_assign_V8_6.png)
 
-1. När konfigurationen är klar väljer du **OK**.
+1. Välj **OK** när du har konfigurerat den.
 
-1. Anpassa leveranserna ytterligare. Mer information om hur du skapar e-postmeddelanden finns i [Designa och skicka e-post](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/email/create-email) -avsnitt.
+1. Anpassa leveranserna ytterligare. Mer information om hur du skapar e-postmeddelanden finns i avsnittet [Designa och skicka e-postmeddelanden](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/email/create-email).
 
 >[!TAB Adobe Campaign Web]
 
 Följ stegen nedan för att skapa en ny fristående leverans.
 
-1. Gå till **[!UICONTROL Deliveries]** till vänster och klicka på **[!UICONTROL Create delivery]** -knappen.
+1. Bläddra till menyn **[!UICONTROL Deliveries]** i den vänstra listen och klicka på knappen **[!UICONTROL Create delivery]**.
 
    ![](assets/branding_assign_web_4.png)
 
@@ -115,11 +116,11 @@ Följ stegen nedan för att skapa en ny fristående leverans.
 
 1. Bekräfta genom att klicka på knappen **[!UICONTROL Create delivery]**.
 
-1. Från **[!UICONTROL Properties]** sida, klicka **[!UICONTROL Settings]**.
+1. Klicka på **[!UICONTROL Settings]** på sidan **[!UICONTROL Properties]**.
 
    ![](assets/branding_assign_web_5.png)
 
-1. Från **[!UICONTROL Delivery]** -fliken, gå till **[!UICONTROL Branding]** fält.
+1. Gå till fältet **[!UICONTROL Branding]** på fliken **[!UICONTROL Delivery]**.
 
    ![](assets/branding_assign_web_6.png)
 
@@ -127,6 +128,6 @@ Följ stegen nedan för att skapa en ny fristående leverans.
 
    ![](assets/branding_assign_web_7.png)
 
-1. Anpassa leveranserna ytterligare. Mer information om hur du skapar e-postmeddelanden finns i [Skapa din första e-postadress](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/email/create-email) -avsnitt.
+1. Anpassa leveranserna ytterligare. Mer information om hur du skapar e-postmeddelanden finns i avsnittet [Skapa din första e-postadress](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/email/create-email).
 
 >[!ENDTABS]

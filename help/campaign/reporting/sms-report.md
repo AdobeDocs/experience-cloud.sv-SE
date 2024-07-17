@@ -13,12 +13,12 @@ ht-degree: 4%
 
 # SMS-rapport{#sms-report}
 
-The **SMS** rapporten innehåller information om SMS-leveranser, som levererade och avhoppsfrekvenser.
+Rapporten **SMS** innehåller information om SMS-leveranser, till exempel levererade och studsfrekvenser.
 
 ![](assets/dynamic_report_sms.png)
 
-The **SMS-sammanfattning** tabell, diagram och sammanfattningsnummer innehåller tillgängliga data för SMS-leveranser som har skickats.
+Tabellen **SMS-sammanfattning**, diagram och sammanfattningsnummer innehåller tillgängliga data för SMS-leveranser som har skickats.
 
-* **Behandlad/skickad**: Antal SMS som skickats.
-* **Levererat**: Antal SMS-levererade.
+* **Behandlad/skickad**: Antalet SMS som skickades.
+* **Levererat**: Antalet SMS som levererats.
 * **studsar + fel**: Antalet meddelanden som inte kunde levereras.

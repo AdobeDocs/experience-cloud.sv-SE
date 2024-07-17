@@ -4,7 +4,8 @@ description: Lär dig skapa en tjänst med API:er
 role: Data Engineer
 level: Experienced
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 84b72258789ba61016deb813e93bdca0ea142712
+exl-id: 91bbce9e-a618-4be2-840b-c7d021271f4e
+source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Skapa en tjänst med API:er{#creating-a-service-api}
 
-Tjänsterna skapas med en **POST** förfrågan om tjänstresursen.
+Tjänsterna skapas med en **POST**-begäran på tjänstresursen.
 
 Om du vill skapa tjänsten med specifika attribut lägger du till dem i nyttolasten. I annat fall skapas den nya tjänsten med standardtjänster.
 

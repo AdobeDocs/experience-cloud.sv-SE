@@ -7,7 +7,8 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 84b72258789ba61016deb813e93bdca0ea142712
+exl-id: 69e8d034-6bdd-4b82-bcd7-1ef4be0a59b3
+source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 0%
@@ -16,13 +17,13 @@ ht-degree: 0%
 
 # Skapa profiler med API:er {#creating-profiles-api}
 
-Skapa profiler med en **POST** begäran på profilresursen.
+Profiler skapas med en **POST**-begäran på profilresursen.
 
 >[!CAUTION]
 >
->Om du vill associera en <b>orgUnit</b> till den skapade profilen måste du utöka profilresursen med det här fältet och, efter att tillägget har publicerats, utföra en begäran om POST på <b>ProfileAndServicesExt</b> slutpunkt.
+>Om du vill associera en <b>orgUnit</b> med den skapade profilen måste du utöka profilresursen med det här fältet och, efter att tillägget har publicerats, utföra en POST på slutpunkten <b>ProfileAndServicesExt</b> .
 >
->Mer information om profilens resurstillägg finns i <a href="https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Kampanjdokumentation</a>.
+>Mer information om profilens resurstillägg finns i <a href="https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Kampanjdokumentationen</a>.
 
 <br/>
 

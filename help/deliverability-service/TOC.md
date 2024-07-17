@@ -6,11 +6,11 @@ hide: true
 source-git-commit: e52b82bd3f81fb68831ccbd1038e0187d1672595
 workflow-type: tm+mt
 source-wordcount: '17'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 
 # Leveranstjänst för Adobe {#deliverability-server}
 
-* [Start](home.md)
+* [Startsida](home.md)
 * [Global undertryckningslista](global-suppression-list.md)

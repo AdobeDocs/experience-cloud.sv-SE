@@ -7,7 +7,8 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 84b72258789ba61016deb813e93bdca0ea142712
+exl-id: c6968252-a012-4029-bbb8-66f4f693e99b
+source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 48%
@@ -22,7 +23,7 @@ ht-degree: 48%
 >
 >Innan du genomför API-anrop bör du kontrollera de begränsningar för skalor som motsvaras i licensavtalet. Se denna [sida](https://helpx.adobe.com/se/legal/product-descriptions/campaign-standard.html#ITInfrastructureResourcesbyActiveProfilesTiers) för mer information om detta.
 
-Kampanjens REST-API:er är avsedda att göra att du kan **skapa integreringar** för Adobe Campaign och **bygga ditt eget ekosystem** genom att interagera med Adobe Campaign med den tekniska panel som du använder.
+Kampanj-REST-API:er är avsedda för att du ska kunna **skapa integreringar** för Adobe Campaign och **skapa ett eget ekosystem** genom att interagera med Adobe Campaign med den panel med tekniker som du använder.
 
 Med Adobe Campaign REST API:er får du tillgång till följande funktioner:
 

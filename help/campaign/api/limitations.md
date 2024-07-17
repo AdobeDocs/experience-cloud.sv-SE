@@ -8,7 +8,8 @@ role: Data Engineer
 level: Experienced
 mini-toc-levels: 1
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 4ddde59006a72f34090a0ed4a765447c69c5f029
+exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
+source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 1%
@@ -27,7 +28,7 @@ Med migreringen läggs två produktprofiler till i dina befintliga eller redan s
 
 ### Klient-ID
 
-Efter migreringen rekommenderas att du använder **Klient-ID för kampanj v8** i REST-URL:er, ersätta ditt tidigare Campaign Standard-klientorganisations-ID.
+Efter migreringen, för framtida integreringar, rekommenderas att du använder ditt **Campaign v8-klientorganisations-ID** i REST-URL:er och ersätter ditt tidigare Campaign Standard-klientorganisations-ID.
 
 ### Nyckelanvändning
 
@@ -44,7 +45,7 @@ För närvarande är REST API:erna som listas nedan tillgängliga:
 
 >[!AVAILABILITY]
 >
->För tillfället är **Transaktionsmeddelanden** REST API är inte tillgängligt.
+>För närvarande är REST API:t för **transaktionsmeddelanden** inte tillgängligt.
 >
 >REST-API:erna som anges nedan är inaktuella och kan inte användas:
 >* Marknadsföringshistorik
@@ -53,7 +54,7 @@ För närvarande är REST API:erna som listas nedan tillgängliga:
 
 ## Filtrering
 
-* Om du vill använda dina filter i REST API-nyttolaster måste du redigera dem i Campaign v8 och ange ett namn att använda i dina nyttolaster. Om du vill göra det kommer du åt filtrets ytterligare parametrar från **[!UICONTROL Parameters]** och ange önskat namn i dialogrutan **[!UICONTROL Filter name in REST API]** fält.
+* Om du vill använda dina filter i REST API-nyttolaster måste du redigera dem i Campaign v8 och ange ett namn att använda i dina nyttolaster. Om du vill göra det kommer du åt filtrets ytterligare parametrar på fliken **[!UICONTROL Parameters]** och anger önskat namn i fältet **[!UICONTROL Filter name in REST API]**.
 
   ![](assets/api-filtering.png)
 
@@ -113,13 +114,13 @@ I avsnittet nedan listas skillnaderna mellan felkoder och meddelanden för Campa
 | Använda ett icke-befintligt raw-id i URI | 404 - RST-360011 Ett fel har inträffat. Kontakta administratören. Det gick inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl:0 (dokument med schemat service och namnet adobe_nl) | 404 - Det går inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl (dokument med schemat service och namnet adobe_nl) |
 | Använda ett icke-befintligt raw-id i begärandetexten | 404 - RST-360011 Ett fel har inträffat. Kontakta administratören. Det gick inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl (dokument med schemat service och namnet adobe_nl) | 404 - Det går inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl (dokument med schemat service och namnet adobe_nl) |
 | – | 500 - RST-360011 Ett fel har inträffat - kontakta administratören. | 500 - Ett fel har inträffat. Kontakta administratören. |
-| Infoga en profil/tjänst med ett ogiltigt enum-värde för kön (eller något annat) | 500 - RST-360011 Ett fel har inträffat - kontakta administratören. Värdet invalid är inte giltigt för nms:recipient:genusuppräkning för fältet &#39;@kön&#39; | 500 -Ett fel har inträffat - kontakta administratören. |
+| Infoga en profil/tjänst med ett ogiltigt enum-värde för kön (eller något annat) | 500 - RST-360011 Ett fel har inträffat - kontakta administratören. Värdet invalid är inte giltigt för nms:recipient:kön-uppräkningen i fältet @kön | 500 -Ett fel har inträffat - kontakta administratören. |
 
 ## Profil - tidszon
 
-Med Campaign Standard visas tidszonen som en del av JSON-svaret för **profileAndServices/profile** REST API-anrop.
+Med Campaign Standard visas tidszonen som en del av JSON-svaret för REST-API-anrop för **profileAndServices/profile**.
 
-Med Campaign v8 visas tidszonen endast för användaren som en del av **profileAndServicesExt/profile** REST API-anrop. Det är inte en del av **profileAndServices/profile** REST API-anrop eftersom det läggs till i ett utökat schema.
+Med Campaign v8 visas tidszonen endast för användaren som en del av **profileAndServicesExt/profile** REST API-anrop. Det ingår inte i **profileAndServices/profile** REST API-anrop eftersom det läggs till i ett utökat schema.
 
 ## Arbetsflöden - Extern signalutlösare
 

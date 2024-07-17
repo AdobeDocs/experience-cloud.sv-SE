@@ -17,15 +17,15 @@ ht-degree: 27%
 
 # Konfigurera API-åtkomst {#setting-up-api-access}
 
-Adobe Campaign Standard API-åtkomst konfigureras enligt stegen nedan. Varje steg beskrivs i [Adobe Developer-dokumentation](https://developer.adobe.com/developer-console/docs/guides/#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
+Adobe Campaign Standard API-åtkomst konfigureras enligt stegen nedan. Var och en av dessa steg beskrivs i [Adobe Developer-dokumentationen](https://developer.adobe.com/developer-console/docs/guides/#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md).
 
 >[!IMPORTANT]
 >
->Hantera certifikat i [Adobe Developer](https://developer.adobe.com/), kontrollera att du har **Systemadministratör** rättigheter till organisationen eller [utvecklarkonto](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) i Admin Console.
+>Om du vill hantera certifikat i [Adobe Developer](https://developer.adobe.com/) måste du ha **systemadministratörsbehörighet** i organisationen eller ett [utvecklarkonto](https://helpx.adobe.com/se/enterprise/using/manage-developers.html) i Admin Console.
 
 1. **Kontrollera att du har ett digitalt certifikat** eller skapa ett vid behov. De offentliga och privata nycklarna som tillhandahålls med certifikatet behövs i följande steg.
-1. **Skapa en ny integrering av Adobe Campaign Service** in [Adobe Developer](https://developer.adobe.com/) och konfigurera det. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet ...).
-1. **Skapa en OAuth Server-till-server** genom att följa dessa [implementeringssteg](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+1. **Skapa en ny integrering av Adobe Campaign-tjänsten** i [Adobe Developer](https://developer.adobe.com/) och konfigurera den. Dina autentiseringsuppgifter genereras sedan (API-nyckel, klienthemlighet ...).
+1. **Skapa en OAuth Server-till-Server**-autentiseringsuppgift genom att följa dessa [implementeringssteg](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
 
    >[!IMPORTANT]
    >
@@ -44,18 +44,18 @@ För att upprätta en säker tjänst-till-tjänst Adobe I/O API-session måste v
 -H 'X-Api-Key: <API_KEY>'
 ```
 
-* **&lt;organization>**: Detta är ditt personliga organisations-ID, och Adobe tillhandahåller ett organisations-ID för var och en av dina instanser:
+* **&lt;ORGANISATION>**: Detta är ditt personliga organisations-ID, och Adobe tillhandahåller ett ORGANISATIONS-ID för var och en av dina instanser:
 
-   * &lt;organization> : din produktionsinstans,
-   * &lt;organization-mkt-stage>: din sceninstans.
+   * &lt;ORGANIZATION> : din produktionsinstans,
+   * &lt;ORGANIZATION-mkt-stage>: din sceninstans.
 
-  Kontakta din administratör eller din teknikkunniga Adobe-kontakt för att få ditt organisations-ID-värde. Du kan även hämta den till Adobe I/O när du skapar en ny integrering i licenslistan (se <a href="https://developer.adobe.com/developer-console/docs/guides/authentication/">Adobe Developer-dokumentation</a>).
+  Kontakta din administratör eller din teknikkunniga Adobe-kontakt för att få ditt organisations-ID-värde. Du kan även hämta den till Adobe I/O när du skapar en ny integrering i licenslistan (se <a href="https://developer.adobe.com/developer-console/docs/guides/authentication/">Adobe Developer-dokumentationen</a>).
 
-* **&lt;access_token>**: Din personliga åtkomsttoken, som hämtades när din JSON-webbtoken byttes ut via en POST.
+* **&lt;ACCESS_TOKEN>**: Din personliga åtkomsttoken, som hämtades när du bytte din JSON-webbtoken via en POST.
 
 * **&lt;API_KEY>**: Din egen API-nyckel. Det tillhandahålls i Adobe I/O efter att en ny integrering med Adobe Campaign Service har skapats.
 
-  ![alt-text](assets/tenant.png)
+  ![Alt-text](assets/tenant.png)
 
 ## Felsökning
 

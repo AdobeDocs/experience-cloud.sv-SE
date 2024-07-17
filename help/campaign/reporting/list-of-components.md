@@ -1,21 +1,22 @@
 ---
 title: Lista över komponenter
-description: Här finns en lista över alla komponenter som är tillgängliga i Dynamic-rapporter samt deras definitioner.
+description: Här finns en lista med alla komponenter som finns i     Dynamiska rapporter och definitioner.
 level: Beginner
 audience: end-user
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: b11d696767209145511b38735f22275a38676ade
+exl-id: 5c58db92-7878-4c70-b076-a393f1cda8b7
+source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # Lista över komponenter {#list-of-components}
 
-Observera att om två komponenter inte är kompatibla visas värdet i cellen **Ingen**.
+Observera att om två komponenter inte är kompatibla visas värdet **Ingen** i cellen.
 
-## Mått {#dimensions}
+## Dimensioner {#dimensions}
 
 Tabellen nedan visar en lista över de dimensioner som används i rapporter och deras definitioner.
 
@@ -23,69 +24,69 @@ Tabellen nedan visar en lista över de dimensioner som används i rapporter och 
  <thead> 
   <tr> 
    <th> Dimension<br/> </th> 
-   <th> Definition<br/> </th> 
+   <th> Definition <br/> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> Webbläsare<br/> </td> 
+   <td> Webbläsare <br/> </td> 
    <td> Webbläsare som meddelandet öppnades eller klickades på.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Campaign<br/> </td> 
-   <td> Etikett och ID för kampanjen.<br/> </td> 
+   <td> Kampanj<br/> </td> 
+   <td> Etikett och ID för din kampanj.<br/> </td> 
   </tr> 
   <tr> 
    <td> Leverans<br/> </td> 
    <td> Etikett och ID för leveransen.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Enhet<br/> </td> 
+   <td> Enhet <br/> </td> 
    <td> Enhet från vilken e-post/SMS/push-meddelandet öppnades/visades/klickades.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Felorsak<br/> </td> 
-   <td> Typer av fel som orsakade studsar för varje leverans, t.ex. okänd användare, ogiltig domän eller full postlåda.<br/> </td> 
+   <td> Felorsak <br/> </td> 
+   <td> Typer av fel som orsakade studsar för varje leverans, t.ex. okänd användare, ogiltig domän eller postlåda full.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Namn på mobilapp<br/> </td> 
-   <td> Mobilprogrammets namn<br/> </td> 
+   <td> Namn på mobilapp <br/> </td> 
+   <td> Namn på mobilprogrammet <br/> </td> 
   </tr>
   <tr> 
-   <td> Plattform<br/> </td> 
-   <td> Plattform för den enhet som meddelandet öppnades/visades/klickades på från.<br/> </td> 
+   <td> Plattform <br/> </td> 
+   <td> Plattform för enheten som meddelandet öppnades/visades/klickades på från.<br/> </td> 
   </tr> 
   <tr> 
    <td> Profil<br/> </td> 
    <td> Grupperar om färdiga och anpassade profilfält som skapats under profilresurstillägget.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Mottagardomän<br/> </td> 
+   <td> Mottagardomän <br/> </td> 
    <td> Domän som används för att öppna e-postmeddelandet.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Återkommande leverans<br/> </td> 
-   <td> Etikett och ID för återkommande leverans.<br/> </td> 
+   <td> Återkommande leverans <br/> </td> 
+   <td> Etikett och ID för den återkommande leveransen.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Avsändardomän<br/> </td> 
-   <td> Domän som användes för att skicka e-postmeddelandet.<br/> </td> 
+   <td> Avsändardomän <br/> </td> 
+   <td> Domänen som används för att skicka e-postmeddelandet.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Avsändarens IP-adress<br/> </td> 
-   <td> IP som användes för att skicka e-postmeddelandet.<br/> </td> 
+   <td> Avsändarens IP<br/> </td> 
+   <td> IP som används för att skicka e-postmeddelandet.<br/> </td> 
   </tr> 
   <tr> 
    <td> Spårnings-URL<br/> </td> 
    <td> URL som användaren klickade på i meddelandet.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Kategori för spårnings-URL<br/> </td> 
-   <td> Kategori som tilldelats spårnings-URL:en.<br/> </td> 
+   <td> URL-spårningskategori <br/> </td> 
+   <td> Kategori tilldelad spårnings-URL.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Etikett för spårnings-URL<br/> </td> 
-   <td> En etikett som skickas till URL:en, till exempel spegelsida, kontakta oss eller öppna.<br/> </td> 
+   <td> URL-etikett <br/> för spårning </td> 
+   <td> En etikett har angetts för URL:en, till exempel spegelsida, kontakta oss eller öppna.<br/> </td> 
   </tr> 
   <tr> 
    <td> Transaktionsleverans<br/> </td> 
@@ -107,73 +108,73 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
 <table> 
  <thead> 
   <tr> 
-   <th> Mått<br/> </th> 
-   <th> Definition<br/> </th> 
+   <th> Mått <br/> </th> 
+   <th> Definition <br/> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> På blockeringslista<br/> </td> 
+   <td> På blockeringslista <br/> </td> 
    <td> Antal mottagare som har deklarerat ett e-postmeddelande som skräppost eller skräppost.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Blockeringslista<br/> </td> 
+   <td> Blocklist frekvens <br/> </td> 
    <td> Procentandel leveranser som är markerade på blockeringslista.<br/> </td> 
   </tr> 
   <tr> 
-   <td> studsar + fel<br/> </td> 
-   <td> Totalt antal fel som sammanställts under leverans och automatisk returbehandling i relation till totalt antal skickade meddelanden.<br/> </td> 
+   <td> studsar + fel <br/> </td> 
+   <td> Totalt antal fel som sammanställts under leverans och automatisk returbearbetning i relation till totalt antal skickade meddelanden.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Studsa + Felfrekvens<br/> </td> 
+   <td> Studsa + felfrekvens <br/> </td> 
    <td> Procentandel e-postmeddelanden som studsade jämfört med e-postmeddelanden som skickades.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Klicka<br/> </td> 
+   <td> Klicka på<br/> </td> 
    <td> Antal gånger som ett innehåll klickades i en leverans.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Klicka igenom hastigheten<br/> </td> 
+   <td> Klicka igenom frekvensen <br/> </td> 
    <td> Procentandel klick i en leverans.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Levererat<br/> </td> 
-   <td> Antal meddelanden som har skickats, i relation till det totala antalet skickade meddelanden.<br/> </td> 
+   <td> Levererad<br/> </td> 
+   <td> Antal meddelanden som har skickats, i relation till totalt antal skickade meddelanden.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Levererad ränta<br/> </td> 
-   <td> Procentandel meddelanden som har skickats.<br/> </td> 
+   <td> Levererad frekvens <br/> </td> 
+   <td> Procentandel meddelanden som skickades.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Hård studs<br/> </td> 
-   <td> Totalt antal permanenta fel, t.ex. fel e-postadress.<br/> </td> 
+   <td> Hårt studs<br/> </td> 
+   <td> Totalt antal permanenta fel, till exempel fel e-postadress.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Hård studsfrekvens<br/> </td> 
+   <td> Hård studsfrekvens <br/> </td> 
    <td> Procentandel leveranser som misslyckades på grund av permanenta fel.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Spegelsida<br/> </td> 
+   <td> Spegelsida <br/> </td> 
    <td> Antal mottagare som klickade på länken för spegelsidan.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Spegelsidhastighet<br/> </td> 
+   <td> Spegelsidhastighet <br/> </td> 
    <td> Procentandel klick på spegelsidlänken jämfört med totalt antal leveransmeddelanden.<br/> </td> 
   </tr> 
   <tr> 
    <td> Erbjud klickningar<br/> </td> 
-   <td> Antal gånger som man klickat på ett erbjudande i en leverans.<br/> </td> 
+   <td> Antal gånger som någon klickade på ett erbjudande i en leverans.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Erbjud klickfrekvens<br/> </td> 
-   <td> Andel klick i ett erbjudande.<br/> </td> 
+   <td> Erbjud klickfrekvens <br/> </td> 
+   <td> Procentandel klick i ett erbjudande.<br/> </td> 
   </tr> 
   <tr> 
    <td> Öppna<br/> </td> 
    <td> Antal gånger ett meddelande öppnades i en leverans.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Öppen kurs<br/> </td> 
+   <td> Öppen frekvens <br/> </td> 
    <td> Procentandel öppnade meddelanden.<br/> </td> 
   </tr> 
   <tr> 
@@ -185,7 +186,7 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
    <td> Antal meddelanden som studsade och resulterade i karantän för adressen.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Karantänsats<br/> </td> 
+   <td> Karantänsats <br/> </td> 
    <td> Procent av karantän jämfört med skickade meddelanden.<br/> </td> 
   </tr> 
   <tr> 
@@ -193,15 +194,15 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
    <td> Antal meddelanden som klassificerats som skräppost av SMTP-servrar.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Avvisad ränta<br/> </td> 
+   <td> Avvisad frekvens <br/> </td> 
    <td> Procentandel av meddelanden som markerats som avvisade.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Mjuk studsa<br/> </td> 
-   <td> Totalt antal tillfälliga fel, till exempel en fullständig inkorg.<br/> </td> 
+   <td> Mjuk studs <br/> </td> 
+   <td> Totalt antal tillfälliga fel, t.ex. en fullständig inkorg.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Mjuk studsfrekvens<br/> </td> 
+   <td> Mjuk studsfrekvens <br/> </td> 
    <td> Procentandel leveranser som misslyckades på grund av temporär orsak.<br/> </td> 
   </tr> 
   <tr> 
@@ -217,11 +218,11 @@ Tabellerna nedan ger dig en lista över de mätvärden som används i rapporter 
    <td> Antal mottagare som klickat på länken för att ta bort prenumerationen.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Avbeställningsfrekvens<br/> </td> 
+   <td> Avbeställningsfrekvens <br/> </td> 
    <td> Antal unika avprenumerationer jämfört med levererade meddelanden.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Avbeställ<br/> </td> 
+   <td> Avbeställ <br/> </td> 
    <td> Antal klick på länken för att avbryta prenumerationen.<br/> </td> 
   </tr> 
  </tbody> 
@@ -355,20 +356,20 @@ Tabellen nedan ger dig en lista över de segment som används i rapporter och de
  <thead> 
   <tr> 
    <th> Segment<br/> </th> 
-   <th> Definition<br/> </th> 
+   <th> Definition <br/> </th> 
   </tr> 
  </thead> 
  <tbody> 
   <tr> 
-   <td> Ålder: boomer 1<br/> </td> 
+   <td> Ålder: Boomerer 1<br/> </td> 
    <td> Mottagare från 1946 till 1954.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Ålder: Boomer 2<br/> </td> 
+   <td> Ålder: blommor 2<br/> </td> 
    <td> Mottagare från 1955 till 1965.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Ålder: från 18 till 25<br/> </td> 
+   <td> Ålder: Från 18 till 25<br/> </td> 
    <td> Mottagare mellan 18 och 25 år.<br/> </td> 
   </tr> 
   <tr> 
@@ -376,11 +377,11 @@ Tabellen nedan ger dig en lista över de segment som används i rapporter och de
    <td> Mottagare mellan 26 och 30 år.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Ålder: från 31 till 40<br/> </td> 
+   <td> Ålder: Från 31 till 40<br/> </td> 
    <td> Mottagare mellan 31 och 40 år.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Ålder: från 41 till 50<br/> </td> 
+   <td> Ålder: Från 41 till 50<br/> </td> 
    <td> Mottagare mellan 41 och 50 år.<br/> </td> 
   </tr> 
   <tr> 
@@ -401,7 +402,7 @@ Tabellen nedan ger dig en lista över de segment som används i rapporter och de
   </tr> 
   <tr> 
    <td> Ålder: mindre än 25<br/> </td> 
-   <td> Mottagare vars ålder är mindre än 25 år.<br/> </td> 
+   <td> Mottagare vars ålder är mindre än 25.<br/> </td> 
   </tr> 
   <tr> 
    <td> Ålder: Mindre än 30<br/> </td> 
@@ -412,16 +413,16 @@ Tabellen nedan ger dig en lista över de segment som används i rapporter och de
    <td> Mottagare vars ålder är mindre än 40.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Ålder: mindre än 50<br/> </td> 
+   <td> Ålder: Mindre än 50<br/> </td> 
    <td> Mottagare vars ålder är mindre än 50.<br/> </td> 
   </tr> 
   <tr> 
-   <td> Ålder: tyst generering<br/> </td> 
+   <td> Ålder: tyst generering <br/> </td> 
    <td> Mottagare födda 1945 eller tidigare.<br/> </td> 
   </tr> 
   <tr> 
    <td> Alla besök<br/> </td> 
-   <td> Varje mottagare<br/> </td> 
+   <td> Alla mottagare<br/> </td> 
   </tr>
  </tbody> 
 </table>

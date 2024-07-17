@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # API-felsökning {#troubleshooting}
 
-* **När du går till konsolen Adobe.io visas följande fel:&quot;Adobe I/O-konsolen är bara tillgänglig för att välja medlemmar i företagskonton. Kontakta systemadministratören om du anser att du bör ha åtkomst.&quot;**
+* **När du går till konsolen Adobe.io visas följande fel:&quot;Konsolen Adobe I/O är bara tillgänglig för att välja medlemmar i företagskonton. Kontakta systemadministratören om du anser att du bör ha åtkomst.**
 
 Du kan bara skapa API-nycklar för de organisationer som du är administratör för. Om det här meddelandet visas och du vill skapa API-nycklar och du vill fråga en administratör i organisationen.
 
@@ -73,7 +73,7 @@ I svaret måste värdet för ORGANIZATION_ID vara detsamma i din första GET-beg
 }
 ```
 
-* **När du gör en begäran till Adobe.io får du {&quot;code&quot;:500, &quot;message&quot;:&quot;Oops. Något gick fel. Kontrollera din URI och försök igen.&quot;}**
+* **När du skickar en begäran till Adobe.io får du {&quot;code&quot;:500, &quot;message&quot;:&quot;Oops. Något gick fel. Kontrollera din URI och försök igen.&quot;}**
 
 Adobe.io deklarerar din ogiltiga URI: troligtvis är den URI du begär inte giltig. När du väljer Campaign-tjänsten i Adobe.io får du en väljare med en lista över möjliga organisations_ids. Du måste kontrollera att den du väljer är den som du anger i URL:en.
 
@@ -81,7 +81,7 @@ Adobe.io deklarerar din ogiltiga URI: troligtvis är den URI du begär inte gilt
 
 Antingen är din token ogiltig (felaktigt IMS-anrop som används för att generera en token) eller så har din token gått ut.
 
-* **Jag kan inte se min profil efter att jag har skapat den**
+* **Jag kan inte se min profil när den har skapats**
 
 Beroende på instanskonfigurationen måste den skapade profilen kopplas till en **orgUnit**. Mer information om hur du lägger till det här fältet när du skapar finns i [det här avsnittet](creating-profiles-api.md).
 

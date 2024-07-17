@@ -7,7 +7,8 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 84b72258789ba61016deb813e93bdca0ea142712
+exl-id: 9e2d1b59-55a5-4715-adfb-35191a9df536
+source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -30,17 +31,17 @@ ht-degree: 0%
 
 ## Resursrepresentation
 
-Alla API-resurser är tillgängliga i **JSON** med ett URL-tillägg eller i ett HTTP Accept-huvud:
+Alla API-resurser är tillgängliga i **JSON** med ett URL-tillägg eller i ett HTTP Accept Header:
 
 `GET /profileAndServices/<resourceName>.json`
 
 >[!NOTE]
 >
->Utan tillägg i URL:en **json-formatet är standardformatet** för innehållstypen.
+>Utan tillägg i URL:en är formatet **json** som standard för innehållstypen.
 
 <br/>
 
-***frågeexempel***
+***begär exempel***
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile.json \
@@ -66,7 +67,7 @@ Om profilresursen har utökats med ett anpassat nyckelfält kan du använda det 
 
 Det går inte att ändra anpassade nycklar med hjälp av en PATCH-åtgärd om nyckelvärdet skiljer sig från ursprungsnyckeln eller om du använder din egen affärsnyckel som URI i stället för den som tillhandahålls av Adobe.
 
-Använd en anpassad nyckel för **profilresurser på den översta nivån** endast. URL:er returneras av API:t och bör aldrig skapas av dig själv.
+Använd endast en anpassad nyckel för **profilresurser på den översta nivån**. URL:er returneras av API:t och bör aldrig skapas av dig själv.
 
 <br/>
 

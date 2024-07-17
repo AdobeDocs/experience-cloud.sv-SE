@@ -2,13 +2,13 @@
 title: Adobe Campaign webbgränssnitt
 description: 64-bitars tabeller
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 47b06a42fad73254025d8e21d14724f6fe93345b
+exl-id: ab5f01fd-4ad5-46e9-b132-011fe0f7bbd2
+source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
 
 ---
-
 
 # 64-bitars scheman {#64-bit-tables}
 
@@ -45,5 +45,3 @@ Här är listan över scheman som har ändrats till 64 bitar och deras ändrade 
 | nms:webEvent | broadLogSrc-id, broadLogRemkt-id |
 | nms:broadLogMid | mktBroadLogId |
 | nms:mirrorPageSearch | remoteMessageId |
-
-

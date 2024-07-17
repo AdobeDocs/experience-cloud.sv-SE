@@ -4,7 +4,8 @@ description: I den körklara rapporten om klagomål kan du se hur många gånger
 audience: end-user
 level: Intermediate
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 3f4400f24b75e8e435610afbe49e9d9444dbf563
+exl-id: dbbced99-85b3-4f88-b0cd-1fe1abc6bca8
+source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 15%
@@ -17,6 +18,6 @@ Rapporten **[!UICONTROL Complaints]** identifierar de leveranser som oftast har 
 
 ![](assets/delivery_reports_complaints.png)
 
-The **Flop** tabell, sorterad efter mottagardomän, visar antalet mottagare som har deklarerat ett e-postmeddelande eller en skräppost. Tabellens resultat är också tillgängliga i diagram och sammanfattningsnummer.
+Tabellen **Flop**, sorterad efter mottagardomän, visar antalet mottagare som har deklarerat ett e-postmeddelande eller en skräppost. Tabellens resultat är också tillgängliga i diagram och sammanfattningsnummer.
 
-The **Levererat jämfört med Blockeringslista** I tabellen visas antalet mottagare som har deklarerat ett e-postmeddelande som skräppost eller skräppost. Tabellen sorteras efter leverans.
+I tabellen **Levererat jämfört med Blockeringslista** visas antalet mottagare som har deklarerat ett e-postmeddelande som skräppost eller skräppost. Tabellen sorteras efter leverans.

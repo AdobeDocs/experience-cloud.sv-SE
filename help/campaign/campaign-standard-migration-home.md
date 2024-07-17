@@ -21,11 +21,11 @@ Dessutom kommer den här övergången att ge många fördelar:
 * Integrering med Adobe Experience Platform
 * Enhetligt användargränssnitt och enhetlig upplevelse
 
-Mer information om nyckelfunktioner och konceptskillnader finns i [den här sidan](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration).
+Mer information om nyckelfunktioner och konceptskillnader finns på [den här sidan](https://experienceleague.adobe.com/en/docs/campaign-web/v8/start/acs-migration).
 
 ## Nyheter
 
-Få en glimt av alla funktioner som [Webbanvändargränssnitt för kampanj](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home) och [Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home).
+Få en glimt av alla funktioner som erbjuds av [Webbanvändargränssnittet för kampanj](https://experienceleague.adobe.com/en/docs/campaign-web/v8/campaign-web-home) och [Campaign v8](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/campaign-home).
 
 För att du ska kunna gå över smidigt har vi lagt till nyckelfunktioner från Campaign Standard till v8:
 
@@ -37,13 +37,13 @@ Ni har tillgång till Dynamic Reporting som tillhandahåller helt anpassningsbar
 
 [![bild](assets/do-not-localize/learn-more-button.svg)](reporting/get-started-reporting.md)
 
->[!TAB Centraliserad varumärkesprofilering]
+>[!TAB Centraliserad profilering]
 
 Era tekniska administratörer kan nu definiera ett eller flera varumärken för att centralisera de parametrar som påverkar ett varumärkes identitet.
 
 [![bild](assets/do-not-localize/learn-more-button.svg)](branding/branding-gs.md)
 
->[!TAB Övriga API:er]
+>[!TAB Återstående API:er]
 
 Du kan använda Rest API:er för att skapa integreringar för Adobe Campaign och bygga ett eget ekosystem genom att interagera med Adobe Campaign med den panel med tekniker som du använder.
 
@@ -61,15 +61,15 @@ Du kan använda Rest API:er för att skapa integreringar för Adobe Campaign och
     </td>
     <td>
     <a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/wf/gs-workflows"><img src="assets/do-not-localize/menu-workflows.jpeg"></a>
-    <div><strong>Omdesignad arbetsyta</strong><br/></div><br/>
+    <div><strong>Omdesignad arbetsyta för arbetsflöde</strong><br/></div><br/>
     </td>
     <td>
     <a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/email/content/start-design/get-started-email-designer"><img src="assets/do-not-localize/menu-email.png"></a>
-    <div><strong>Vi presenterar Designer</strong><br/>
+    <div><strong>Möt e-postadressen Designer</strong><br/>
     </div></td>
     <td>
     <a href="https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/dynamic-content/gs-personalization"><img src="assets/do-not-localize/menu-dynamic.png"></a>
-    <div><strong>Gör innehållet dynamiskt</strong><br/></div>
+    <div><strong>Gör ditt innehåll dynamiskt</strong><br/></div>
     </td>
   </tr>
   <tr style="border: 0;">

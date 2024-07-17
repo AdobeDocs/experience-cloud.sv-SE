@@ -4,7 +4,8 @@ description: Läs mer om hur du uppdaterar profiler med API:er
 role: Data Engineer
 level: Experienced
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 84b72258789ba61016deb813e93bdca0ea142712
+exl-id: fa3796ee-a00c-4d70-bf3d-e8d2099f1116
+source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 1%
@@ -13,13 +14,13 @@ ht-degree: 1%
 
 # Uppdatera profiler med API:er{#updating-profiles-api}
 
-Uppdatering av profiler utförs med en **PATCH** begäran.
+Uppdatering av profiler utförs med en **PATCH**-begäran.
 
 `https://mc.adobe.io/<ORGANIZATION>/campaign/<apiName>/<resourceName>/<PKEY>`
 
 1. Det första steget är att **hämta profilen**.
 
-1. I en andra begäran gör du en **PATCH begäran** på profilen med den fullständiga informationen i nyttolasten.
+1. I en andra begäran utför du en **PATCH-begäran** på profilen med den fullständiga informationen i nyttolasten.
 
 1. För att kontrollera om PATCH har uppdaterat profilen kan vi utföra en slutgiltig begäran om GET.
 

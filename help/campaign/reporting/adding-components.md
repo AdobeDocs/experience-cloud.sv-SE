@@ -4,7 +4,8 @@ description: Dra och släpp komponenter i frihandstabellen för att börja filtr
 audience: end-user
 level: Intermediate
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 3f4400f24b75e8e435610afbe49e9d9444dbf563
+exl-id: 2b22f147-ed75-40ca-8859-8f4b23bca7c3
+source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 4%
@@ -15,19 +16,19 @@ ht-degree: 4%
 
 Med komponenter kan du anpassa rapporter med olika dimensioner, mätvärden och tidsperioder.
 
-1. Klicka på **[!UICONTROL Components]** för att komma åt komponentlistan.
+1. Klicka på fliken **[!UICONTROL Components]** för att komma åt komponentlistan.
 
    ![](assets/dynamic_report_components.png)
 
-1. Varje kategori som presenteras i **[!UICONTROL Components]** -fliken visar de fem mest använda objekten. Klicka på namnet på en kategori för att få tillgång till dess fullständiga lista över komponenter.
+1. Varje kategori som visas på fliken **[!UICONTROL Components]** visar de fem mest använda objekten. Klicka på namnet på en kategori för att få tillgång till dess fullständiga lista över komponenter.
 
    Komponenttabellen är uppdelad i fyra kategorier:
 
-   * **Dimensioner**: Hämta information från leveransloggen, t.ex. mottagarens webbläsare eller domän, eller leveransens framgångar.
-   * **Mått**: Hämta information om status för ett meddelande. Om ett meddelande till exempel levererades och användaren öppnade det.
-   * **[!UICONTROL Segments]**: Filtrera data beroende på mottagarens åldersintervall. **[!UICONTROL Segments]** kan dras och släppas direkt i en frihandstabell eller i panelens övre fält.
+   * **Dimensioner**: Hämta information från leveransloggen, till exempel mottagarens webbläsare eller domän, eller om leveransen lyckades.
+   * **Mätvärden**: Hämta information om status för ett meddelande. Om ett meddelande till exempel levererades och användaren öppnade det.
+   * **[!UICONTROL Segments]**: Filtrera data beroende på mottagarens åldersintervall. **[!UICONTROL Segments]** kan dras och släppas direkt i en friformstabell eller i panelens övre fält.
 
-     Den här kategorin är bara tillgänglig när administratören har godkänt villkoren i det dynamiska användningsavtalet för rapportering som visas på skärmen. Om administratören avböjer avtalet visas inte segmenten i **[!UICONTROL Components]** och data samlas inte in.
+     Den här kategorin är bara tillgänglig när administratören har godkänt villkoren i det dynamiska användningsavtalet för rapportering som visas på skärmen. Om administratören avböjer avtalet visas inte segmenten på fliken **[!UICONTROL Components]** och data samlas inte in.
 
    * **Tid**: Ange en tidsperiod för tabellen.
 
@@ -35,11 +36,11 @@ Med komponenter kan du anpassa rapporter med olika dimensioner, mätvärden och 
 
    ![](assets/dynamic_report_components_2.png)
 
-1. När du har dragit och släppt en komponent kan du konfigurera tabellen ytterligare med **[!UICONTROL Row settings]** alternativ.
+1. När du har dragit och släppt komponenten kan du konfigurera tabellen ytterligare med alternativet **[!UICONTROL Row settings]**.
 
    ![](assets/dynamic_report_components_3.png)
 
-1. Du kan även filtrera tabellen ytterligare genom att klicka på **Sök** -ikon. Med den här sökningen kan du söka efter specifika resultat, t.ex. en viss leverans eller webbläsare.
+1. Du kan även filtrera tabellen ytterligare genom att klicka på ikonen **Sök** . Med den här sökningen kan du söka efter specifika resultat, t.ex. en viss leverans eller webbläsare.
 
    ![](assets/dynamic_report_components_4.png)
 

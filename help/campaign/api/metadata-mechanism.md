@@ -7,7 +7,8 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 84b72258789ba61016deb813e93bdca0ea142712
+exl-id: 58ec0999-b28a-4198-8d57-729b074c6a6d
+source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 1%
@@ -16,13 +17,13 @@ ht-degree: 1%
 
 # Metadatamekanism {#metadata-mechanism}
 
-Du kan hämta resursmetadata med **resourceType** i en GET-förfrågan:
+Du kan hämta metadata för resurser med **resourceType** i en GET-begäran:
 
 `GET /profileAndServices/resourceType/<resourceName>`
 
 Svaret returnerar huvudmetadata från resursen (alla andra fält är beskrivande eller interna):
 
-* The **Innehåll** noden returnerar resursens fält. För varje fält i **innehåll** nod hittar vi följande fält:
+* Noden **Innehåll** returnerar resursfälten. För varje fält i noden **content** finns följande fält:
 
    * &quot;apiName&quot;: namnet på attributet som används i API:erna.
    * &quot;type&quot;: det här är definitionen på högnivåtyp (sträng, tal, länk, samling, uppräkning...).
@@ -31,9 +32,9 @@ Svaret returnerar huvudmetadata från resursen (alla andra fält är beskrivande
    * &quot;resType&quot;: Detta är den tekniska typen.
 
      Om&quot;type&quot; har fyllts i med värdet&quot;link&quot; eller&quot;collection&quot; är värdet resTarget namnet på resursen som länken pekar på.
-Om &quot;type&quot; har fyllts i med värdet &quot;enumeration&quot;, läggs ett &quot;values&quot;-fält till och varje uppräkningsvärde beskrivs i **values** nod.
+Om &quot;type&quot; har slutförts med värdet &quot;enumeration&quot; läggs ett &quot;values&quot;-fält till och varje uppräkningsvärde anges i noden **values**.
 
-* The **Filter** noden returnerar URL:en för att hämta associerade filter. Mer information om filter finns i [det här avsnittet](filtering.md) -avsnitt.
+* Noden **Filter** returnerar URL:en för att hämta associerade filter. Mer information om filter finns i [det här avsnittet](filtering.md).
 
 <!-- créer une section au même niveau sur les liens -->
 <!-- dans l'exemple: birthdate, email +  mettre 2 liens : un de type 1-1 , 1-N

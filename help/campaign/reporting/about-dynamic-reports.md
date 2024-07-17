@@ -4,7 +4,8 @@ description: Med dynamiska rapporter kan du dra och släppa variabler och dimens
 level: Beginner
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
 audience: end-user
-source-git-commit: 3f4400f24b75e8e435610afbe49e9d9444dbf563
+exl-id: d79f8a07-2322-4bc7-9d74-446db24a8d70
+source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 4%
@@ -17,7 +18,7 @@ Dynamic Reporting ger helt anpassningsbara rapporter i realtid. Det ger åtkomst
 
 ## Åtkomst till dynamiska rapporter {#accessing-dynamic-reports}
 
-Du kan få åtkomst till rapporter i varje kampanj och leverans genom att klicka på **Rapporter**. Ett popup-fönster visas som talar om att du kommer att omdirigeras till **Dynamisk rapport** i en ny flik i webbläsaren.
+Du kan få åtkomst till rapporter i varje kampanj och leverans genom att klicka på **Rapporter**. Ett popup-fönster visas som talar om att du kommer att omdirigeras till sidan **Dynamisk rapport** på en ny flik i webbläsaren.
 
 ![](assets/campaign_reports_access.png)
 
@@ -25,7 +26,7 @@ Vissa rapporter är inte tillgängliga omedelbart efter en leverans, beroende p�
 
 Dynamiska rapporter är indelade i två kategorier:
 
-* **Mallar**, som kan ändras genom att de kopieras med **Spara som** option (**Projekt > Spara som..**) i mallen.
-* **Anpassade rapporter** (identifieras i blått), som du kan skapa direkt genom att klicka på **Skapa nytt projekt** på **Rapporter** hemsida.
+* **Mallar**, som kan ändras genom att de kopieras med alternativet **Spara som** (**Projekt > Spara som..**) i mallen.
+* **Anpassade rapporter** (identifieras i blått), som kan skapas direkt genom att klicka på knappen **Skapa nytt projekt** på hemsidan **Rapporter**.
 
 ![](assets/dynamic_report_overview.png)

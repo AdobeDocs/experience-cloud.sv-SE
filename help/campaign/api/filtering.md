@@ -7,7 +7,8 @@ topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
-source-git-commit: 84b72258789ba61016deb813e93bdca0ea142712
+exl-id: cdb050b7-d327-42f7-b534-d32d988c8ffb
+source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -65,10 +66,10 @@ Utför en GET-begäran på URL:en. Den returnerar listan med filter för profilr
 
 Samma metadatastruktur är tillgänglig för varje filter:
 
-* The **@formType** och **@webPage** fält är tekniska fält.
-* The **data** innehåller ett exempel på hur filtret ska användas.
-* The **metadata** noden beskriver filterparametrarna.
-* The **villkor** noden beskriver vad filtret är tänkt att göra. Filterparametrarna som beskrivs i metadatanoden används för att skapa filtervillkor. För varje filtervillkor, om **enabledIf** är sant, **expr** kommer att tillämpas.
+* Fälten **@formType** och **@webPage** är tekniska fält.
+* Fältet **data** innehåller ett exempel på hur du använder filtret.
+* Noden **metadata** beskriver filterparametrarna.
+* Noden **condition** beskriver vad filtret är avsett att göra. Filterparametrarna som beskrivs i metadatanoden används för att skapa filtervillkor. Om **enabledIf** är true används **expr** för varje filtervillkor.
 
 <br/>
 
@@ -132,7 +133,8 @@ Det går att kombinera flera filter i en enda begäran:
   }
   ```
 
-* Sample GET request to retrieve the &quot;profile&quot; resources containing &quot;Do&quot; in the email or last name fields (filtret byText söker i både e-post- och efternamnsfälten).
+* Exempel på GET-förfrågan om att hämta profilresurser som innehåller &quot;Utför&quot; i
+e-post- eller efternamnsfälten (filtret byText söker i både e-post- och efternamnsfälten).
 
   ```
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/byText?text=Doe \
@@ -200,8 +202,8 @@ Om du vill använda ett eget filter måste du skapa och anpassa det i Adobe Camp
 
 Mer information finns i Campaign Standardens dokumentation:
 
-* [Konfigurerar filterdefinition](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html).
-* [Användningsfall: Anropa en resurs med en sammansatt identifieringsnyckel](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html).
+* [Konfigurerar filterdefinitionen](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html).
+* [Använd skiftläge: Anropar en resurs med en sammansatt identifieringsnyckel](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html).
 
 <br/>
 
