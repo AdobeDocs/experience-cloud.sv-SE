@@ -7,10 +7,10 @@ role: Admin
 level: Experienced
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
 exl-id: 7afc802d-e90c-48c8-aa04-3ea543dfdfbc
-source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
+source-git-commit: 62c2f2e7a6f5dd347749e963a655b717cd5c7310
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 37%
+source-wordcount: '326'
+ht-degree: 26%
 
 ---
 
@@ -56,10 +56,8 @@ En **[!UICONTROL Brand]** definieras av följande egenskaper:
 
   ![](assets/branding_3.png)
 
-<!--![](assets/branding_05.png)-->
+* Med menyn **[!UICONTROL Tracking URL configs]** kan du förbättra URL-spårningen genom att definiera ytterligare parametrar för integrering med webbanalysverktyg som Adobe Analytics och Google Analytics.
 
-<!--
-* **[!UICONTROL Tracking URL configs]**, which defines the configuration of the URLs tracking for your brand.
+  Använd menyn **[!UICONTROL Additional URL Parameters]** om du vill skapa ytterligare parametrar som nyckelvärdepar tillsammans med deras tillämplighetsvillkor. Varje parameternamn måste vara unikt och inte tomt, och varje parametervärde måste vara icke-tomt. Tillämplighetsvillkoret kan vara tomt, men inget av dessa värden kan innehålla JST-taggar.
 
-  The additional parameters that allow the links to be tracked on external systems such as Web Analytics tools like Adobe Analytics or Google Analytics are defined here.
--->
+  De här parametrarna kommer att användas för spårade URL:er som matchar alla domännamn som anges i **[!UICONTROL List of Domain Names]**, som kan innehålla reguljära uttryck.

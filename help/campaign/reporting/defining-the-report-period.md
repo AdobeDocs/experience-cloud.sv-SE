@@ -5,14 +5,18 @@ audience: end-user
 level: Intermediate
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
 exl-id: 36506f7d-aeeb-41cf-b971-6e42e1c7cdc8
-source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
+source-git-commit: 62c2f2e7a6f5dd347749e963a655b717cd5c7310
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '238'
 ht-degree: 3%
 
 ---
 
 # Definiera rapportperioden{#defining-the-report-period}
+
+>[!NOTE]
+>
+>Datarapportering är tillgänglig de senaste 13 månaderna. Mer information om lagringsperioder för data får du om du kontaktar Adobe konsulter eller tekniska administratörer.
 
 Innan du startar eller öppnar en rapport måste du använda en tidsperiod. Den angivna perioden finns längst upp till höger i rapporten.
 
