@@ -9,9 +9,9 @@ level: Experienced
 mini-toc-levels: 1
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
 exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
-source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
+source-git-commit: 6e4e214731b9772014d01dde89b3f80e4c4e93a6
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1057'
 ht-degree: 1%
 
 ---
@@ -128,10 +128,10 @@ Campaign Standard Workflow GET API returnerar parameternamn som arbetsflödesins
 
 Campaign v8 stöder inte variabler för annonsarbetsflödesinstanser, men förväntar sig att utvecklare ska veta vad de är. Efter migreringen måste parameterinformationen i POSTENS begärandetext konstrueras utan att parameterinformationen i GET API-svaret är tillgänglig.
 
-## Transaktionsmeddelanden
+<!--## Transactional messages
 
-* Med Campaign Standard returnerar en begäran om POST tomma fält för element och attribut i begärandetexten. Med Campaign v8 returnerar svaret värden som matchar dem i begärandetexten i stället.
+* With Campaign Standard, a POST request returns empty fields for elements and attributes in the request body. With Campaign v8, the response returns values that match the ones in the request body instead.
 
-* När du publicerar en händelsekonfiguration visar API-förhandsgranskningspanelen REST-URL:en bredvid syntaxen för begärandebrödtexten.
+* When publishing an event configuration, the API preview panel displays the REST URL alongside the request body syntax.
 
-  Eftersom Campaign v8 inte har stöd för fältdefinitioner för händelsekonfiguration (när en händelse skapas läggs ett värde till i eventType-uppräkning) finns det ingen API-förhandsvisningspanel när en händelsetyp läggs till. REST-URL:en visas i användargränssnittet för transaktionsmeddelanden när ett transaktionsmeddelande för händelsen publiceras.
+    Since Campaign v8 does not support event configuration fields definition (event creation is just adding a value to eventType enumeration), there is no API preview panel when adding an event type. The REST URL is displayed  in the transactional message user interface once an event transactional message is published.-->
