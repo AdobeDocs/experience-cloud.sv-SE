@@ -5,10 +5,10 @@ audience: end-user
 level: Beginner
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
 exl-id: 6feac90f-f7c1-48b5-94ff-7fef92a2af83
-source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
+source-git-commit: b65dbece574778eada43497456ff0eed850a3598
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 11%
+source-wordcount: '287'
+ht-degree: 12%
 
 ---
 
@@ -16,9 +16,12 @@ ht-degree: 11%
 
 Dynamic Reporting ger helt anpassningsbara realtidsrapporter för att mäta effekten av era marknadsföringsaktiviteter. Det ger åtkomst till profildata, vilket möjliggör demografiska analyser efter profildimensioner som kön, ort och ålder, utöver funktionella e-postkampanjdata som öppningar och klick.
 
-## Hantera rapporter {#manage-share-reports}
+<table>
+<tr>
+<td><img src="assets/do-not-localize/icon_manage.svg" width="60px"><p><a href="#manage-share-reports">Hantera rapporter</a></p></td><td><img src="assets/do-not-localize/icon_build.svg" width="60px"><p><a href="#build-reports">Bygg era rapporter</a></p></td><td><img src="assets/do-not-localize/icon_customize.svg" width="60px"><p><a href="#customize-reports">Anpassa dina rapporter</a></p></td></tr>
+</table>
 
-<img src="assets/do-not-localize/icon_manage.svg" width="60px">
+## Hantera rapporter {#manage-share-reports}
 
 Med det dynamiska rapportgränssnittet **dra-och-släpp** kan du utforska data, avgöra hur e-postkampanjer har utförts mot de viktigaste kundsegmenten och mäta deras påverkan på mottagare från ett och samma ställe.
 
@@ -31,8 +34,6 @@ Läs mer:
 
 ## Bygg era rapporter {#build-reports}
 
-<img src="assets/do-not-localize/icon_build.svg" width="60px">
-
 Adobe Campaign webbanvändargränssnitt innehåller en uppsättning **färdiga dynamiska rapporter** som gör att du kan mäta flera aspekter av marknadsföringskampanjer: studsar, leveranser som har deklarerats som mest som skräppost eller skräppost, de flesta visade leveranser från mottagare, kanalrelaterade rapporter, leveransflöde och spårningsrapporter..
 
 **Kombinera olika komponenter** (dimensioner, mått och segment, tidsperioder) för att skapa egna rapporter eller personalisera färdiga rapporter.
@@ -44,8 +45,6 @@ Läs mer:
 * [Lista över rapporter](defining-the-report-period.md)
 
 ## Anpassa dina rapporter {#customize-reports}
-
-<img src="assets/do-not-localize/icon_customize.svg" width="60px">
 
 **Anpassa dina rapporter** genom att utnyttja funktionerna för dynamisk rapportdesign: lägg till så många komponenter du behöver (paneler och frihandstabeller) för att analysera dina data med tillgängliga mått och mått.
 
