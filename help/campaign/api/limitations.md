@@ -1,22 +1,22 @@
 ---
-title: Recommendations & begränsningar
-description: Recommendations och begränsningar vid migrering till Campaign v8 REST API:er.
+title: Rekommendationer och begränsningar
+description: Rekommendationer och begränsningar vid migrering till Campaign v8 REST API:er.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
 role: Data Engineer
 level: Experienced
 mini-toc-levels: 1
-badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
+badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
-source-git-commit: 6e4e214731b9772014d01dde89b3f80e4c4e93a6
+source-git-commit: 952706ffafc1e7cd6a759bfbbb9c9200191544d9
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
 
-# Recommendations &amp; begränsningar {#limitations}
+# Rekommendationer och begränsningar {#limitations}
 
 ## Behörigheter och säkerhet {#permissions}
 
@@ -42,6 +42,7 @@ För närvarande är REST API:erna som listas nedan tillgängliga:
 * **Tjänster och prenumerationer**
 * **Anpassade resurser**
 * **Arbetsflöden**
+* **Transaktionsmeddelanden**
 
 >[!AVAILABILITY]
 >
@@ -88,18 +89,18 @@ Länkinformationen ignoreras. Följaktligen genereras en ny post under&quot;cusV
 
 I Campaign v8 inträffar ett fel när samma frågetexakthjälpstruktur används och&quot;vehikeln&quot; är kopplad till en profil. Det här felet inträffar eftersom egenskapen &quot;firstName&quot; inte känns igen som giltig för &quot;cusVehicle&quot;. En begärandetext som bara innehåller attributen utan länkfunktionerna utan några problem.
 
-## PATCH operationer
+## PATCH
 
 * Campaign v8 stöder inte PATCH med en tom begärandetext: den returnerar statusen 204 Inget innehåll.
-* Campaign Standard har stöd för PATCH på element/attribut i ett schema, men observera att PATCH-åtgärder på plats inte stöds i Campaign v8. Om du försöker utföra ett PATCH på-plats uppstår ett internt 500-serverfel med ett felmeddelande som anger att zipCode-egenskapen inte är giltig för profile-resursen.
+* Även om Campaign Standard har stöd för PATCH för element/attribut i ett schema, bör du tänka på att PATCH-åtgärder på plats inte stöds i Campaign v8. Om du försöker köra en PATCH på plats uppstår ett internt 500-serverfel med ett felmeddelande som anger att zipCode-egenskapen inte är giltig för profile-resursen.
 
 ## REST-svar
 
-I avsnittet nedan visas mindre skillnader mellan Campaign Standard- och v8 REST-svar.
+I avsnittet nedan visas mindre skillnader mellan Campaign Standard och v8 REST-svar.
 
-* För enskilda GETTER innehåller svaret href i svaret.
+* För enstaka GET-poster inkluderar svaret href i svaret.
 * När Campaign v8 efterfrågas med attributet tillhandahåller den Count och Pagination i svaret.
-* Efter POST returneras värden från länkade resurser i svaret.
+* Efter POST-åtgärder returneras värden från länkade resurser i svaret.
 
 ## Felkoder och meddelanden
 
@@ -124,9 +125,9 @@ Med Campaign v8 visas tidszonen endast för användaren som en del av **profileA
 
 ## Arbetsflöden - Extern signalutlösare
 
-Campaign Standard Workflow GET API returnerar parameternamn som arbetsflödesinstansvariabler och deras datatyper (boolesk, sträng osv.). Detta används för att skapa korrekt formaterad JSON-begärandetext när signalen aktiveras via ett POSTS-API-anrop.
+Campaign Standard Workflow GET API returnerar parameternamn som arbetsflödesinstansvariabler och deras datatyper (boolesk, sträng osv.). Detta används för att skapa korrekt formaterad JSON-begärandetext när signalen aktiveras via ett POST API-anrop.
 
-Campaign v8 stöder inte variabler för annonsarbetsflödesinstanser, men förväntar sig att utvecklare ska veta vad de är. Efter migreringen måste parameterinformationen i POSTENS begärandetext konstrueras utan att parameterinformationen i GET API-svaret är tillgänglig.
+Campaign v8 stöder inte variabler för annonsarbetsflödesinstanser, men förväntar sig att utvecklare ska veta vad de är. Efter migreringen måste parameterinformationen i POST-begärandetexten konstrueras utan att parameterinformationen i GET API-svaret är tillgänglig.
 
 <!--## Transactional messages
 
