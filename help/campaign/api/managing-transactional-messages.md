@@ -8,9 +8,9 @@ role: Data Engineer
 level: Experienced
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 exl-id: 00d39438-a232-49f1-ae5e-1e98c73397e3
-source-git-commit: 6f9c9dd7dcac96980bbf5f7228e021471269d187
+source-git-commit: 110fcdcbefef53677cf213a39f45eb5d446807c2
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '752'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 >[!AVAILABILITY]
 >
->För närvarande är transaktionsmeddelanden som använder REST API:er bara tillgängliga för e-postkanalen och för transaktionshändelser (anrikningsdata är endast tillgängliga via nyttolast, som liknar hur Adobe Campaign V8 fungerar).
+>För närvarande finns transaktionsmeddelanden med REST API:er tillgängliga för e-post- och SMS-kanalerna. Det är endast tillgängligt för transaktionshändelser (anrikningsdata är endast tillgängliga via nyttolast, som liknar hur Adobe Campaign V8 fungerar).
 
 När du har skapat och publicerat en transaktionshändelse måste du integrera den som utlöser den här händelsen på webbplatsen.
 
@@ -44,8 +44,6 @@ POST https://mc.adobe.io/<ORGANIZATION>/campaign/<transactionalAPI>/<eventID>
 
   `POST https://mc.adobe.io/geometrixx/campaign/mcgeometrixx/<eventID>`
 
-  Observera att API-slutpunkten för transaktionsmeddelanden också visas under API-förhandsgranskningen.
-
 * **&lt;eventID>**: den typ av händelse som du vill skicka. Detta ID genereras när händelsekonfigurationen skapas
 
 ### POST-begärandehuvud
@@ -65,7 +63,7 @@ Du måste lägga till en teckenuppsättning, till exempel **utf-8**. Observera a
 
 ### POST-begärandeinnehåll
 
-Händelsedata finns inuti JSON POST-brödtexten. Händelsestrukturen beror på dess definition. Knappen för förhandsgranskning av API på resursdefinitionsskärmen innehåller ett exempel på en begäran.
+Händelsedata finns inuti JSON POST-brödtexten. Händelsestrukturen beror på dess definition.
 
 Följande valfria parametrar kan läggas till i händelseinnehållet för att hantera sändning av transaktionsmeddelanden som är länkade till händelsen:
 
@@ -75,6 +73,40 @@ Följande valfria parametrar kan läggas till i händelseinnehållet för att ha
 >[!NOTE]
 >
 >Värdena för parametrarna &quot;expiration&quot; och &quot;schedule&quot; följer ISO 8601-formatet. ISO 8601 specificerar användningen av versalen &quot;T&quot; för att separera datum och tid. Den kan dock tas bort från indata eller utdata för bättre läsbarhet.
+
+### Kommunikationskanalparametrar
+
+Beroende på vilken kanal som ska användas ska nyttolasten innehålla parametrarna nedan:
+
+* E-postkanal: &quot;mobilePhone&quot;
+* SMS-kanal: &quot;email&quot;
+
+Om nyttolasten bara innehåller &quot;mobilePhone&quot; aktiveras SMS-kommunikationskanalen. Om nyttolasten bara innehåller e-post aktiveras e-postkommunikationskanalen.
+
+I exemplet nedan visas en nyttolast där en SMS-kommunikation kommer att utlösas:
+
+```
+curl --location 'https://mc.adobe.io/<ORGANIZATION>/campaign/mcAdobe/EVTcartAbandonment' \
+--header 'Authorization: Bearer <ACCESS_TOKEN>' \
+--header 'Cache-Control: no-cache' \
+--header 'X-Api-Key: <API_KEY>' \
+--header 'Content-Type: application/json;charset=utf-8' \
+--header 'Content-Length: 79' \
+--data '
+{
+  "mobilePhone":"+9999999999",
+  "scheduled":"2017-12-01 08:00:00.768Z",
+  "expiration":"2017-12-31 08:00:00.768Z",
+  "ctx":
+  {
+    "cartAmount": "$ 125",
+    "lastProduct": "Leather motorbike jacket",
+    "firstName": "Jack"
+  }
+}'
+```
+
+Om nyttolasten innehåller både&quot;email&quot; och&quot;mobilePhone&quot; används e-post som standardkommunikationsmetod. Om du vill skicka ett SMS när båda fälten finns tillgängliga måste du uttryckligen ange det i nyttolasten med hjälp av parametern önskad kanal.
 
 ### Svar på POST-begäran
 
@@ -97,7 +129,10 @@ POST-begäran om att skicka händelsen.
 -H 'Content-Length:79'
 
 {
-  "email":"test@example.com",
+  "
+  
+  
+  ":"test@example.com",
   "scheduled":"2017-12-01 08:00:00.768Z",
   "expiration":"2017-12-31 08:00:00.768Z",
   "ctx":
