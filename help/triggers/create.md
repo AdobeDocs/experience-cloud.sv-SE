@@ -41,7 +41,7 @@ Skapa en utlösare och konfigurera villkoren för utlösaren. Du kan till exempe
 
 1. Välj Analytics **[!UICONTROL Report Suite]** som används för den här utlösaren. Den här inställningen identifierar de rapportdata som ska användas.
 
-   [Läs mer om rapportsviten](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html){target="_blank"}.
+   [Läs mer om rapportsviten](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html?lang=sv-SE){target="_blank"}.
 
 1. Välj giltighetsperioden för **[!UICONTROL Trigger after no action for]**.
 

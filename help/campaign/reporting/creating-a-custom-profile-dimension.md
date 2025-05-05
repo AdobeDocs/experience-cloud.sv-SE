@@ -28,7 +28,7 @@ Om du vill lägga till ett nytt profilfält måste du utöka ditt schema enligt 
 
    ![](assets/custom_field_1.png)
 
-1. Identifiera ditt anpassade mottagarschema och markera det. Om du ännu inte har utökat det inbyggda nms:mottagarschemat kan du läsa [den här proceduren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/shemas-forms/extend-schema).
+1. Identifiera ditt anpassade mottagarschema och markera det. Om du ännu inte har utökat det inbyggda nms:mottagarschemat kan du läsa [den här proceduren](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/developer/shemas-forms/extend-schema).
 
 1. Lägg till ditt anpassade fält i schemaredigeraren.
 
@@ -42,7 +42,7 @@ Om du vill lägga till ett nytt profilfält måste du utöka ditt schema enligt 
 
 1. Klicka på **[!UICONTROL Save]**.
 
-1. Identifiera sedan ditt anpassade brunLogRcp-schema och markera det. Om du ännu inte har utökat det inbyggda leveransloggschemat kan du läsa [den här proceduren](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/shemas-forms/extend-schema).
+1. Identifiera sedan ditt anpassade brunLogRcp-schema och markera det. Om du ännu inte har utökat det inbyggda leveransloggschemat kan du läsa [den här proceduren](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/developer/shemas-forms/extend-schema).
 
 1. Lägg till samma anpassade fält som mottagarschemat i schemaredigeraren.
 
@@ -50,7 +50,7 @@ Om du vill lägga till ett nytt profilfält måste du utöka ditt schema enligt 
 
 1. Klicka på **[!UICONTROL Save]**.
 
-1. Om du vill använda ändringarna i scheman startar du guiden Databasuppdatering via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Update database structure]** och kör uppdateringsdatabasstrukturen. [Läs mer](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/developer/shemas-forms/update-database-structure)
+1. Om du vill använda ändringarna i scheman startar du guiden Databasuppdatering via **[!UICONTROL Tools]** > **[!UICONTROL Advanced]** > **[!UICONTROL Update database structure]** och kör uppdateringsdatabasstrukturen. [Läs mer](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/developer/shemas-forms/update-database-structure)
 
    ![](assets/custom_field_4.png)
 

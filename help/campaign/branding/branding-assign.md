@@ -26,7 +26,7 @@ Din mall kommer att länkas till varumärket. I e-postredigeraren kommer element
 
 >[!TAB Adobe Campaign V8]
 
-Om du vill skapa en leveransmall kan du duplicera en inbyggd mall, konvertera en befintlig leverans till en mall eller skapa en leveransmall från början. [Läs mer](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/send/create-templates)
+Om du vill skapa en leveransmall kan du duplicera en inbyggd mall, konvertera en befintlig leverans till en mall eller skapa en leveransmall från början. [Läs mer](https://experienceleague.adobe.com/sv/docs/campaign/campaign-v8/send/create-templates)
 
 När mallen har skapats kan du koppla den till ett varumärke. Så här gör du:
 
@@ -50,7 +50,7 @@ Nu kan du använda den här mallen för att skicka leveranser.
 
 >[!TAB Adobe Campaign Web]
 
-Om du vill skapa en leveransmall kan du duplicera en inbyggd mall, konvertera en befintlig leverans till en mall eller skapa en leveransmall från början. [Läs mer](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/delivery-template)
+Om du vill skapa en leveransmall kan du duplicera en inbyggd mall, konvertera en befintlig leverans till en mall eller skapa en leveransmall från början. [Läs mer](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/delivery-template)
 
 När mallen har skapats kan du koppla den till ett varumärke. Så här gör du:
 
@@ -98,7 +98,7 @@ Följ stegen nedan för att skapa en ny fristående leverans.
 
 1. Välj **OK** när du har konfigurerat den.
 
-1. Anpassa leveranserna ytterligare. Mer information om hur du skapar e-postmeddelanden finns i avsnittet [Designa och skicka e-postmeddelanden](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/email/create-email).
+1. Anpassa leveranserna ytterligare. Mer information om hur du skapar e-postmeddelanden finns i avsnittet [Designa och skicka e-postmeddelanden](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/email/create-email).
 
 >[!TAB Adobe Campaign Web]
 
@@ -124,6 +124,6 @@ Följ stegen nedan för att skapa en ny fristående leverans.
 
    ![](assets/branding_assign_web_7.png)
 
-1. Anpassa leveranserna ytterligare. Mer information om hur du skapar e-postmeddelanden finns i avsnittet [Skapa din första e-postadress](https://experienceleague.adobe.com/en/docs/campaign-web/v8/msg/email/create-email).
+1. Anpassa leveranserna ytterligare. Mer information om hur du skapar e-postmeddelanden finns i avsnittet [Skapa din första e-postadress](https://experienceleague.adobe.com/sv/docs/campaign-web/v8/msg/email/create-email).
 
 >[!ENDTABS]

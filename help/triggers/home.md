@@ -17,6 +17,6 @@ Du kan använda Experience Cloud Triggers för att koppla data mellan Adobe Camp
 
 **Användbara länkar:**
 
-* [Adobe Campaign Standard + Experience Cloud-utlösardokumentation](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-triggers/about-adobe-experience-cloud-triggers.html)
-* [Adobe Campaign Classic v7 + Experience Cloud-utlösardokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html)
-* [Adobe Campaign v8 + Experience Cloud-utlösardokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-triggers.html)
+* [Adobe Campaign Standard + Experience Cloud-utlösardokumentation](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/working-with-campaign-and-triggers/about-adobe-experience-cloud-triggers.html?lang=sv-SE)
+* [Adobe Campaign Classic v7 + Experience Cloud-utlösardokumentation](https://experienceleague.adobe.com/docs/campaign-classic/using/integrating-with-adobe-experience-cloud/experience-triggers/about-triggers.html?lang=sv-SE)
+* [Adobe Campaign v8 + Experience Cloud-utlösardokumentation](https://experienceleague.adobe.com/docs/campaign/campaign-v8/connect/ac-triggers.html?lang=sv-SE)
