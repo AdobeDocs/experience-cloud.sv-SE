@@ -3,7 +3,7 @@ title: Global undertryckningslista
 description: Upptäck den globala listan över inaktiveringar
 hide: true
 exl-id: 40aef987-52a3-470b-88ca-c716a116bdfc
-source-git-commit: b66e2525694c771ebb7ac5190b7259ef5658d81a
+source-git-commit: 9d12eece2ca9f8f36951f8575bb0ac42bc10a728
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Global undertryckningslista {#global-suppression-list}
 
-En inaktiveringslista består av e-postadresser som kunderna vill utesluta från leveranser, eftersom det kan skada deras sändningsrykte och leveransfrekvenser om de skickar till dessa kontakter. För närvarande håller Adobe en uppdaterad lista över kända dåliga e-postadresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Den här listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
+En inaktiveringslista består av e-postadresser som kunderna vill utesluta från leveranser, eftersom det kan skada deras sändningsrykte och leveransfrekvenser om de skickar till dessa kontakter. För närvarande håller Adobe en uppdaterad lista över kända dåliga e-postadresser som har visat sig vara skadliga för engagemanget och utskickets anseende och ser till att e-post inte skickas till dem. Listan hanteras i en global undertryckningslista som är gemensam för alla Adobe-kunder. Adresserna och domännamnen som finns i den globala undertryckningslistan är dolda. Endast antalet uteslutna mottagare anges i leveransrapporterna.
 
 Nu går det att hantera den globala undertryckningslistan från ett gränssnitt som är tillgängligt internt. Denna lista kommer endast att underhållas av leveranskonsulter. Den globala undertryckningslistan kan innehålla e-postadresser eller domänadresser.
 
