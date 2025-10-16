@@ -4,11 +4,11 @@ description: Läs mer om anpassad resurshantering med API:er/
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
-badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
+badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 exl-id: d7b2231d-46ff-4966-9ea7-27a775e5236b
-source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
+source-git-commit: 11c49b273164b632bcffb7de01890c6f9d7ae9c2
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 2%
@@ -37,7 +37,7 @@ I så fall är alla resurser från tabellerna **Transaction**, **TransactionDeta
 
 ***Exempelbegäran***
 
-Exempelbegäran om GET för att få åtkomst till den utökade profilen AndServicesExt-resursen.
+Exempel på GET-begäran om åtkomst till den utökade profilenAndServicesExt-resursen.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/\

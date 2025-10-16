@@ -4,11 +4,11 @@ description: Lär dig mer om hur du skapar profiler med API:er.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
-badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
+badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 exl-id: 69e8d034-6bdd-4b82-bcd7-1ef4be0a59b3
-source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
+source-git-commit: 11c49b273164b632bcffb7de01890c6f9d7ae9c2
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 0%
@@ -21,15 +21,15 @@ Profiler skapas med en **POST**-begäran på profilresursen.
 
 >[!CAUTION]
 >
->Om du vill associera en <b>orgUnit</b> med den skapade profilen måste du utöka profilresursen med det här fältet och, efter att tillägget har publicerats, utföra en POST på slutpunkten <b>ProfileAndServicesExt</b> .
+>Om du vill associera en <b>orgUnit</b> med den skapade profilen måste du utöka profilresursen med det här fältet och, efter att tillägget har publicerats, utföra en POST-begäran på slutpunkten <b>ProfileAndServicesExt</b> .
 >
->Mer information om profilens resurstillägg finns i <a href="https://helpx.adobe.com/se/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Kampanjdokumentationen</a>.
+>Mer information om profilens resurstillägg finns i <a href="https://helpx.adobe.com/campaign/standard/administration/using/organizational-units.html#partitioning-profiles">Kampanjdokumentationen</a>.
 
 <br/>
 
 ***Exempelbegäran***
 
-Exempelbegäran om POST för att skapa en profil med e-postmeddelandet&quot;john.doe@mail.com&quot;.
+Exempelbegäran POST om att skapa en profil med e-postmeddelandet&quot;john.doe@mail.com&quot;.
 
 ```
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \

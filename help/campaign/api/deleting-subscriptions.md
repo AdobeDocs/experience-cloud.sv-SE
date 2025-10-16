@@ -1,11 +1,11 @@
 ---
 title: Ta bort prenumerationer
 description: Lär dig hur du tar bort prenumerationer med API:er
-role: Data Engineer
+role: Developer
 level: Experienced
-badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
+badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 exl-id: 76e2d102-c877-41a6-af87-2f407201a572
-source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
+source-git-commit: 11c49b273164b632bcffb7de01890c6f9d7ae9c2
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 Detta är en procedur i tre steg.
 
 1. Hämta prenumerations-URL:en för den önskade profilen.
-1. Utför en GET-förfrågan på prenumerations-URL:en.
+1. Utför en GET-begäran på prenumerations-URL:en.
 1. Utför en DELETE-begäran på den önskade tjänst-URL:en.
 
 Om borttagningsbegäran lyckas är svarsstatusen 204 Inget innehåll.
@@ -30,7 +30,7 @@ Om borttagningsbegäran lyckas är svarsstatusen 204 Inget innehåll.
 
 ***Exempelbegäran***
 
-Nedan visas exempel på nyttolaster som visar hur du kan avbryta prenumerationen på en profil från en tjänst. Utför först en GET-förfrågan för att hämta profilen.
+Nedan visas exempel på nyttolaster som visar hur du kan avbryta prenumerationen på en profil från en tjänst. Utför först en GET-begäran om att hämta profilen.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY> \
@@ -53,7 +53,7 @@ Den returnerar prenumerations-URL:en för profilen.
   }
 ```
 
-Utför en GET-förfrågan på prenumerations-URL:en.
+Utför en GET-begäran på prenumerations-URL:en.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/<PKEY>/subscriptions \
@@ -130,7 +130,7 @@ Den returnerar prenumerations-URL:en för tjänsten.
 },
 ```
 
-Utför en GET-förfrågan på prenumerations-URL:en.
+Utför en GET-begäran på prenumerations-URL:en.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/<PKEY>/subscriptions \

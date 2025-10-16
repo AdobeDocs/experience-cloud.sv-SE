@@ -4,11 +4,11 @@ description: Lär dig hur du utför filtreringsåtgärder.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
-badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
+badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 exl-id: cdb050b7-d327-42f7-b534-d32d988c8ffb
-source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
+source-git-commit: 11c49b273164b632bcffb7de01890c6f9d7ae9c2
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -19,15 +19,15 @@ ht-degree: 0%
 
 ## Hämtar filtermetadata
 
-Det finns filter för varje resurs. Om du vill identifiera de filter som är associerade med en resurs måste du utföra en GET-förfrågan på resursmetadata. Denna begäran returnerar URL:en där alla filter har definierats för en given resurs. Mer information om metadata finns i [det här avsnittet](metadata-mechanism.md).
+Det finns filter för varje resurs. Om du vill identifiera de filter som är associerade med en resurs måste du utföra en GET-begäran på resursens metadata. Denna begäran returnerar URL:en där alla filter har definierats för en given resurs. Mer information om metadata finns i [det här avsnittet](metadata-mechanism.md).
 
-Om du vill identifiera metadata för ett filter och bestämma hur det ska användas, måste du utföra en GET-begäran på den URL som returnerades tidigare.
+Om du vill identifiera metadata för ett filter och avgöra hur det ska användas, måste du utföra en GET-begäran på den tidigare returnerade URL:en.
 
 <br/>
 
 ***Exempelbegäran***
 
-Exempelnyttolasterna nedan visar hur du hämtar filtermetadata för byText för profilresursen. Utför först en GET-förfrågan på resursens profilmetada.
+Exempelnyttolasterna nedan visar hur du hämtar filtermetadata för byText för profilresursen. Utför först en GET-begäran på resursmetadata för profilen.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/resourceType/profile \
@@ -101,7 +101,7 @@ Det går att kombinera flera filter i en enda begäran:
 
 ***Exempelbegäranden***
 
-* Exempelbegäran om GET för att hämta tjänstresurserna med typen e-post.
+* Exempelbegäran från GET om att hämta tjänstresurserna med typen &quot;email&quot;.
 
   ```
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel?channel=email \
@@ -133,7 +133,7 @@ Det går att kombinera flera filter i en enda begäran:
   }
   ```
 
-* Exempel på GET-förfrågan om att hämta profilresurser som innehåller &quot;Utför&quot; i
+* Exempel på GET-begäran om att hämta profilresurserna som innehåller &quot;Doe&quot; i
 e-post- eller efternamnsfälten (filtret byText söker i både e-post- och efternamnsfälten).
 
   ```
@@ -162,7 +162,7 @@ e-post- eller efternamnsfälten (filtret byText söker i både e-post- och efter
   }
   ```
 
-* Exempelbegäran om GET för att hämta tjänstresurserna med typen&quot;email&quot; och etiketten&quot;sport&quot;.
+* Exempelbegäran från GET om att hämta tjänstresurserna med typen&quot;email&quot; och etiketten&quot;sport&quot;.
 
   ```
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/byChannel/byText?channel=email&text=sport \
@@ -200,16 +200,16 @@ Om du vill använda ett eget filter måste du skapa och anpassa det i Adobe Camp
 
 `GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/<resourceName>/by<customFilterName>?<customFilterparam>=<customFilterValue>`
 
-Mer information finns i Campaign Standardens dokumentation:
+Mer information finns i Campaign Standard-dokumentationen:
 
-* [Konfigurerar filterdefinitionen](https://helpx.adobe.com/se/campaign/standard/developing/using/configuring-filter-definition.html).
-* [Använd skiftläge: Anropar en resurs med en sammansatt identifieringsnyckel](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html?lang=sv-SE).
+* [Konfigurerar filterdefinitionen](https://helpx.adobe.com/campaign/standard/developing/using/configuring-filter-definition.html).
+* [Använd skiftläge: Anropar en resurs med en sammansatt identifieringsnyckel](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/adding-or-extending-a-resource/uc-calling-resource-id-key.html).
 
 <br/>
 
 ***Exempelbegäran***
 
-Sample GET request to retrieve the &quot;profile&quot; resources with transaction amount of 100$ or more. Observera att filtret&quot;byAmount&quot; först har definierats i Adobe Campaign Standard-gränssnittet och länkats till den anpassade tabellen&quot;Transaction&quot;.
+Exempel på GET-begäran om att hämta profilresurserna med transaktionsbelopp på 100$ eller mer. Observera att filtret&quot;byAmount&quot; först har definierats i Adobe Campaign Standard-gränssnittet och länkats till den anpassade tabellen&quot;Transaction&quot;.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/byAmount?amount_parameter=100 \

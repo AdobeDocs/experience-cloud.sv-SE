@@ -1,11 +1,11 @@
 ---
 title: Skapa en tjänst med API:er
 description: Lär dig skapa en tjänst med API:er
-role: Data Engineer
+role: Developer
 level: Experienced
-badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
+badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 exl-id: 91bbce9e-a618-4be2-840b-c7d021271f4e
-source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
+source-git-commit: 11c49b273164b632bcffb7de01890c6f9d7ae9c2
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Om du vill skapa tjänsten med specifika attribut lägger du till dem i nyttolas
 
 ***Exempelbegäran***
 
-Exempelbegäran om POST för att skapa en tjänst med specifika attribut.
+Exempelbegäran POST för att skapa en tjänst med specifika attribut.
 
 ```
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/service/ \

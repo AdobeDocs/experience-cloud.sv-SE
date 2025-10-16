@@ -1,11 +1,11 @@
 ---
 title: Hämta profiler
 description: Läs mer om hur du hämtar profiler med API:er
-role: Data Engineer
+role: Developer
 level: Experienced
-badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
+badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 exl-id: 19679804-f728-49fa-b26e-8f31b67c29bf
-source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
+source-git-commit: 11c49b273164b632bcffb7de01890c6f9d7ae9c2
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 4%
@@ -18,13 +18,13 @@ Hämtning av profiler utförs med en **GET**-begäran.
 
 Du kan sedan förfina sökningen med filter, ordning och sidnumrering. Mer information finns i avsnittet [Ytterligare åtgärder](sorting.md).
 
-Med Campaign Standard-API:er kan du dessutom söka efter profiler som baseras på något av dessa fält: e-post, förnamn, efternamn eller andra anpassade fält. Mer information om detta finns i [det här avsnittet](#searching-field).
+Med Campaign Standard API:er kan du dessutom söka efter profiler som baseras på något av dessa fält: e-post, förnamn, efternamn eller andra anpassade fält. Mer information om detta finns i [det här avsnittet](#searching-field).
 
 <br/>
 
 ***Exempelbegäranden***
 
-* Exempelbegäran om GET för att hämta alla profiler.
+* Exempelbegäran från GET om att hämta alla profiler.
 
   ```
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile \
@@ -50,7 +50,7 @@ Med Campaign Standard-API:er kan du dessutom söka efter profiler som baseras p�
   }
   ```
 
-* Exempelbegäran om GET för att hämta de första 10 e-postvärdena.
+* Exempel på GET-begäran om att hämta de första 10 e-postvärdena.
 
   ```
   -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServices/profile/email?_lineCount=10 \

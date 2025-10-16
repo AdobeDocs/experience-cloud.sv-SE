@@ -4,11 +4,11 @@ description: Lär dig hur du utlöser en signalaktivitet med API:er.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
-badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
+badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 exl-id: 9f94e98f-fe04-4369-8946-1380e02cdece
-source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
+source-git-commit: 11c49b273164b632bcffb7de01890c6f9d7ae9c2
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 I ett Adobe Campaign Standard-arbetsflöde kan det finnas en eller flera **externa signalaktiviteter**. Dessa aktiviteter är &#39;avlyssnare&#39; som väntar på att aktiveras.
 
-Med Campaign Standards-API:er kan du utlösa en **extern signalaktivitet** för att anropa ett arbetsflöde. API-anropet kan innehålla parametrar som ska infogas i arbetsflödets händelsevariabler (ett målnamn, ett filnamn som ska importeras, en del av meddelandeinnehållet osv.). På så sätt kan ni enkelt integrera era Campaign-automatiseringar med ert externa system.
+Med Campaign Standard API:er kan du utlösa en **extern signal**-aktivitet för att anropa ett arbetsflöde. API-anropet kan innehålla parametrar som ska infogas i arbetsflödets händelsevariabler (ett målnamn, ett filnamn som ska importeras, en del av meddelandeinnehållet osv.). På så sätt kan ni enkelt integrera era Campaign-automatiseringar med ert externa system.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Med Campaign Standards-API:er kan du utlösa en **extern signalaktivitet** för 
 
 Så här utlöser du ett arbetsflöde:
 
-1. Utför en **GET**-begäran i arbetsflödet för att hämta URL:en för utlösaren för extern signalaktivitet.
+1. Utför en **GET**-begäran i arbetsflödet för att hämta URL:en för den externa signalaktivitetsutlösaren.
 
    `GET https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<workflowID>`
 
@@ -62,7 +62,7 @@ Om du vill anropa arbetsflödet med parametrar lägger du till dem i nyttolasten
 
 ***Exempelbegäran***
 
-Utför en GET-förfrågan i arbetsflödet.
+Utför en GET-begäran i arbetsflödet.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<workflowID> \
@@ -91,7 +91,7 @@ Den returnerar arbetsflödets signalaktivitet och den associerade utlösar-URL:e
 }
 ```
 
-Om du vill utlösa en signalaktivitet utför du en POST på utlösar-URL:en med &quot;source&quot;. Lägg till parameterattributen om du vill anropa arbetsflödet med parametrar.
+Utlösa en signalaktivitet genom att utföra en POST-begäran på utlösar-URL:en med &quot;källa&quot;. Lägg till parameterattributen om du vill anropa arbetsflödet med parametrar.
 
 ```
 -X POST https://mc.adobe.io/<ORGANIZATION>/campaign/workflow/execution/<PKEY>/activities/activity/<PKEY>/trigger \
@@ -115,7 +115,7 @@ Om du vill utlösa en signalaktivitet utför du en POST på utlösar-URL:en med 
 
 <!-- + réponse -->
 
-Om en av parametrarna inte deklareras i den externa signalaktiviteten returnerar POSTEN felmeddelandet nedan, vilket anger vilken parameter som saknas.
+Om en av parametrarna inte deklareras i den externa signalaktiviteten returnerar POST-begäran felet nedan, vilket anger vilken parameter som saknas.
 
 ```
 RST-360011 An error has occurred - please contact your administrator.

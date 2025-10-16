@@ -4,11 +4,11 @@ description: Måste läsas innan API:er används.
 audience: developing
 content-type: reference
 topic-tags: campaign-standard-apis
-role: Data Engineer
+role: Developer
 level: Experienced
-badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
+badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 exl-id: 9e2d1b59-55a5-4715-adfb-35191a9df536
-source-git-commit: 14d8cf78192bcad7b89cc70827f5672bd6e07f4a
+source-git-commit: 11c49b273164b632bcffb7de01890c6f9d7ae9c2
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
@@ -20,8 +20,8 @@ ht-degree: 0%
 ## Tekniska krav
 
 * Adobe Campaign API:er får endast användas på servern.
-* Kontrollera alltid med den tekniska kontaktpersonen på Adobe om det användningsfall du vill implementera är anpassat till den skala som tillåts av Adobe Campaign API:er.
-* Om du vill konfigurera en AdobeIO-åtkomst måste du ha särskilda behörigheter. Kontakta Adobe Support om du har problem.
+* Kontakta alltid Adobe tekniska kontakt om användningsfallet som du vill implementera är anpassat till den skala som tillåts av Adobe Campaign API:er.
+* Du måste ha specifik behörighet för att konfigurera en AdobeIO-åtkomst. Kontakta Adobe Support om du har problem.
 
 ## Rättigheter och tillgång
 
@@ -65,7 +65,7 @@ Om profilresursen har utökats med ett anpassat nyckelfält kan du använda det 
 
 `GET /.../profileAndServicesExt/profile/<customKey>`
 
-Det går inte att ändra anpassade nycklar med hjälp av en PATCH-åtgärd om nyckelvärdet skiljer sig från ursprungsnyckeln eller om du använder din egen affärsnyckel som URI i stället för den som tillhandahålls av Adobe.
+Det går inte att ändra anpassade nycklar med hjälp av en PATCH-åtgärd om nyckelvärdet skiljer sig från originalnyckeln, eller om du använder din egen affärsnyckel som URI i stället för den som tillhandahålls av Adobe.
 
 Använd endast en anpassad nyckel för **profilresurser på den översta nivån**. URL:er returneras av API:t och bör aldrig skapas av dig själv.
 
@@ -73,7 +73,7 @@ Använd endast en anpassad nyckel för **profilresurser på den översta nivån*
 
 ***Exempelbegäran***
 
-Om du vill hämta prenumerationer för en profil med hjälp av en anpassad tangent utför du en GET-åtgärd på den anpassade nyckeln.
+Om du vill hämta prenumerationer för en profil med hjälp av en anpassad nyckel utför du en GET-åtgärd på den anpassade nyckeln.
 
 ```
 -X GET https://mc.adobe.io/<ORGANIZATION>/campaign/profileAndServicesExt/profile/<customKey> \
