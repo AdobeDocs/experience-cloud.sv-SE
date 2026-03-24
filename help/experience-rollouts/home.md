@@ -1,28 +1,40 @@
 ---
 title: Adobe Experience Rollouts
 description: Lär dig hur du använder Adobe Experience Rollouts för att leverera funktioner på ett säkert och gradvis sätt med kontrollerade utrullningar, funktionsflaggor och målinriktad målgruppshantering.
-source-git-commit: 1c8fd9b42d08f657b4e6b16efae86faa04d15565
+exl-id: c400d75d-d928-4cf6-a094-1a2f443389f0
+source-git-commit: 65effd7e3b12404359e3693820bbf9e5080bea03
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
-
 # Adobe Experience Rollouts {#experience-rollouts-home}
 
-Adobe Experience Rollouts är en funktionshanterings- och en kontrollerad versionsplattform som hjälper produktteamen att leverera nya funktioner på ett säkert, gradvis och riskfritt sätt.
+Med Adobe Experience Rollouts kan produktteamen leverera nya funktioner gradvis och säkert - utan omdistributioner eller driftavbrott. Du definierar vem som ser vad, när och i vilken takt. Om något går fel stänger du av funktionen direkt. Om det går bra kan ni utöka publiken enligt ert schema.
 
-I stället för att aktivera en ny funktion för alla samtidigt kan man med Experience Rollouts
+## Vad du kan göra
 
-* **Frigör funktioner gradvis** - Börja med en liten andel användare och öka sedan med tiden. Om något inte fungerar som det ska kan funktionen stängas av snabbt utan driftavbrott eller ominstallation av programvara.
+**Styr vilka som ser nya funktioner.** Målreleaser för specifika användare, organisationer, regioner eller anpassade attribut. Börja med en liten grupp, validera upplevelsen och utöka sedan - allt från konsolen, utan kodändringar.
 
-* **Målfunktioner för specifika målgrupper** - Aktivera nya funktioner för valda grupper (till exempel betaprogram, vissa regioner eller specifika planer) så att ändringarna kan valideras och förfinas innan de blir allmänt tillgängliga.
+**Kör A/B-experiment.** Leverera olika varianter till olika målgruppssegment och mät vilka som fungerar bättre. Använd resultatet för att fatta välgrundade produktbeslut före en fullständig version.
 
-* **Kör experiment och A/B-tester** - Prova olika versioner av en funktion (t.ex. alternativa layouter, flöden eller rekommendationer) och mät vilket som fungerar bättre med hjälp av data som underlag för produktbeslut.
+**Minska versionsrisken.** Dela upp stora ändringar i mindre, kontrollerade rollouter. Om ett fel eller prestandaproblem uppstår inaktiverar du bara den påverkade funktionen - resten av programmet förblir stabilt.
 
-* **Minska risken för viktiga releaser** - Bryt upp stora ändringar i mindre, kontrollerade rullningar så att problemen blir lättare att upptäcka, förstå och åtgärda innan de påverkar alla.
+**Koordinera mellan team.** Med funktionsgrupper för olika team kan flera team delta i en enda samordnad release där var och en hanterar sina egna funktionsflaggor samtidigt som de delar ett gemensamt lanseringsschema och målgrupp.
 
-* **Svara snabbt på problem** - Om ett fel eller prestandaproblem uppstår stänger du bara av den berörda funktionen medan resten av programmet är stabilt.
+## Använd din första funktion
 
-I praktiken gör Experience Rollouts det enklare för slutanvändarna att uppleva fler förbättringar med färre avbrott: nya funktioner kan komma fram tidigare, testas mer noggrant och justeras snabbt baserat på feedback från verkligheten.
+Det börjar med tre steg att få värde från upplevelseutrullningar:
+
+1. **Konfigurera ditt team och program** - [Begär åtkomst](guides/console/request-access.md) till konsolen och [anslut sedan programmet](guides/applications/onboard-your-application.md) så att Experience Rollouts vet vilka klienter som ska betjänas.
+
+2. **Skapa och publicera en funktionsflagga** - Följ guiden [Skapa din första funktionsflagga](guides/feature-flags/create-your-first-feature-flag.md) för att definiera en flagga, ange din ursprungliga målgrupp och publicera den i din miljö.
+
+3. **Integrera med ditt program** - Anslut din app till API:t för upplevelseutrullningar eller SDK så att den kan hämta och använda funktionsflaggor vid körning. Börja med [integreringsstegen](guides/integrate/integration-steps.md) för programtypen.
+
+När din första flagga är aktiv kan du förfina dess målgrupp, konfigurera en gradvis utrullning och marknadsföra den genom [releaselägen](guides/feature-flags/release-states.md) från sparad till fullständig utrullning.
+
+## Behöver du hjälp?
+
+Om något inte beter sig som förväntat innehåller [felsökningsguiden](guides/support/troubleshooting.md) de vanligaste problemen. Om du vill ha mer information [kontaktar du support](guides/support/contact-support.md).
