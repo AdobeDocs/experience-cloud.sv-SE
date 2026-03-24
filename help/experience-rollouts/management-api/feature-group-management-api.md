@@ -1,9 +1,9 @@
 ---
 title: API för hantering av funktionsgrupper
 description: API-referens för Experience Rollouts-API:t för hantering av funktionsgrupper, inklusive slutpunkter för att hämta, skapa, uppdatera, ta bort och styra utrullningsplaner för funktionsgrupper.
-source-git-commit: 8a92b7a3e8c52da8bb2474f52c831e159420b878
+source-git-commit: db719ba7b9db91aea818d8ef216a28fcedc6aa65
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '575'
 ht-degree: 3%
 
 ---
@@ -90,28 +90,6 @@ Begärandetexten använder [funktionsgruppsobjektet](#feature-group-object). `ro
 }
 ```
 
-**Exempel - automatiserad utrullning:**
-
-```json
-{
-  "params": { "rolloutType": "automated", "label": "my-automated-group", "tags": [] },
-  "status": "SAVED",
-  "type": "group",
-  "name": "my.automated.group",
-  "variations": [{ "variantPercentage": 100, "variantName": "Variant 1", "features": [] }],
-  "phaseRollOutPlan": {
-    "phaseRollOutBlocks": [
-      { "isPhaseBlock": true, "phaseRule": { "audience": [] }, "waitRule": null, "blockId": 1, "blockName": "", "isBlockActivated": false },
-      { "isPhaseBlock": false, "phaseRule": null, "waitRule": { "waitDuration": { "val": "2", "unit": "HOURS" } }, "blockId": 2, "blockName": "", "isBlockActivated": false },
-      { "isPhaseBlock": true, "phaseRule": { "audience": [] }, "waitRule": null, "blockId": 3, "blockName": "", "isBlockActivated": false }
-    ],
-    "rollOutPlanState": "DRAFT"
-  },
-  "clients": [],
-  "org": { "id": 95 }
-}
-```
-
 ### Svar {#create-response}
 
 | Status | Beskrivning |
@@ -136,29 +114,6 @@ Uppdaterar en befintlig funktionsgrupp. Skicka samma struktur som skapandebegär
 | `200` | Lyckades. Svarstexten är det uppdaterade funktionsgruppsobjektet. |
 | `400` | Ogiltig nyttolast. |
 | `403` | Otillräckliga behörigheter. |
-
-## Pausa, återuppta eller avbryta en utrullningsplan {#pause-resume-abort}
-
-Kontrollerar körningen av en pågående automatiserad plan för driftsättning av A/B-tester.
-
-| Åtgärd | Slutpunkt |
-|---|---|
-| **Fortsätt** | `POST /m/api/v1/mgmt/phaserollout/resume` |
-| **Paus** | `POST /m/api/v1/mgmt/phaserollout/pause` |
-| **Avbryt** | `POST /m/api/v1/mgmt/phaserollout/abort` |
-
-### Begärandetext {#control-request-body}
-
-```json
-{
-  "entityId": 10282,
-  "fgEntityType": "GROUP"
-}
-```
-
-### Svar {#control-response}
-
-Returnerar `true` när åtgärden lyckades.
 
 ## Ta bort funktionsgrupp {#delete-group}
 
@@ -230,4 +185,3 @@ Varje block i `phaseRollOutBlocks` är antingen ett **fasblock** (`isPhaseBlock:
 * [Översikt över API:er för funktionshantering](feature-management-apis-overview.md)
 * [Hanterings-API för funktionsflaggor](feature-flags-management-api.md)
 * [API för hanteringskorrigering](management-patch-api.md)
-* [Skapa en automatiserad utrullning](../guides/automated-rollouts/create-automated-rollout.md)

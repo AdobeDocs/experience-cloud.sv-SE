@@ -2,9 +2,9 @@
 audience: user
 user-guide-title: Adobe Experience Rollouts
 user-guide-description: Lär dig hur du använder Adobe Experience Rollouts för att hantera funktionsflaggor, kontrollerade lanseringar och riktade releaser i alla program.
-source-git-commit: cd1d882942705f51440ae99f4ce6daf467d3283c
+source-git-commit: db719ba7b9db91aea818d8ef216a28fcedc6aa65
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -77,10 +77,6 @@ ht-degree: 0%
       + [Koppla miljöer till ett program](guides/cross-environment/associate-environments.md)
       + [Visa funktionsflaggor i olika miljöer](guides/cross-environment/view-feature-flags-across-environments.md)
       + [Importera funktionsflaggor](guides/cross-environment/import-feature-flags.md)
-   + Automatiserade utrullningar {#automated-rollouts}
-      + [Skapa en automatiserad utrullning](guides/automated-rollouts/create-automated-rollout.md)
-      + [Automatiserat utrullningskoncept](guides/automated-rollouts/automated-rollout-concept.md)
-      + [Övervaka och redigera en utrullningsplan](guides/automated-rollouts/monitor-edit-rollout-plan.md)
    + Support {#support}
       + [Felsökning](guides/support/troubleshooting.md)
       + [Få support](guides/support/get-support.md)
@@ -93,14 +89,14 @@ ht-degree: 0%
          + [Integreringsguide för Node.js SDK](guides/sdk-releases/nodejs/nodejs-sdk-integration-guide.md)
          + [Node.js Versionsinformation för SDK](guides/sdk-releases/nodejs/nodejs-sdk-release-notes.md)
       + [SDK prestandatester](guides/sdk-releases/java-sdk-benchmarking.md)
-<!--+ Feature API {#feature-api}
-  + [GET Feature API V3](feature-api/get-feature-api-v3.md)
-  + [GET Feature API V2](feature-api/get-feature-api-v2.md)
-+ Management API {#management-api}
-  + [Feature management APIs overview](management-api/feature-management-apis-overview.md)
-  + [Feature flags management API](management-api/feature-flags-management-api.md)
-  + [Feature group management API](management-api/feature-group-management-api.md)
-  + [Release management APIs](management-api/release-management-apis.md)
-  + [Get client ID for an application](management-api/get-client-id.md)
-  + [Get desired audience criteria](management-api/get-audience-criteria.md)
-  + [Management patch API](management-api/management-patch-api.md)-->
++ Funktions-API {#feature-api}
+   + [GET Feature API V3](feature-api/get-feature-api-v3.md)
+   + [GET Feature API V2](feature-api/get-feature-api-v2.md)
++ Hanterings-API {#management-api}
+   + [Översikt över API:er för funktionshantering](management-api/feature-management-apis-overview.md)
+   + [Hanterings-API för funktionsflaggor](management-api/feature-flags-management-api.md)
+   + [API för hantering av funktionsgrupper](management-api/feature-group-management-api.md)
+   + [API:er för versionshantering](management-api/release-management-apis.md)
+   + [Hämta klient-ID för ett program](management-api/get-client-id.md)
+   + [Hämta önskade målgruppskriterier](management-api/get-audience-criteria.md)
+   + [API för hanteringskorrigering](management-api/management-patch-api.md)

@@ -1,9 +1,9 @@
 ---
 title: Skapa en funktionsgrupp för flera team
 description: Lär dig hur du skapar en funktionsgrupp för flera team i Adobe Experience Rollouts för att samordna funktionsflaggor för program som ägs av olika team.
-source-git-commit: a1ed4582217001ffcf500cd7b634d9959adbe028
+source-git-commit: db719ba7b9db91aea818d8ef216a28fcedc6aa65
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Börja skapa från avsnittet Releaser i konsolen:
 Ange en titel, nyckel, beskrivning och eventuellt en tagg. Konfigurera följande alternativ:
 
 * **Procentandel av utrullningen** - Ange hur mycket av publiken som tar emot funktionen.
-* **Utrullningstyp** - Välj Manuell eller Automatiserad. Se [Automatiserade rollouts](../automated-rollouts/automated-rollout-concept.md) för mer information om hur automatiserade rollouts fungerar.
+* **Utrullningstyp** - anges till Manuell. Procentandelen hanteras steg för steg när utrullningen fortskrider.
 
 >[!NOTE]
 >
@@ -91,4 +91,3 @@ En detaljerad jämförelse finns i [Releaser och teamöverskridande funktionsgru
 
 * [Releaser och teamöverskridande funktionsgrupper](releases-and-cross-team-feature-groups.md)
 * [Skapa en funktionsgrupp](create-a-feature-group.md)
-* [Skapa en automatiserad utrullning](../automated-rollouts/create-automated-rollout.md)

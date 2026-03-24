@@ -1,9 +1,9 @@
 ---
 title: Översikt över API:er för funktionshantering
 description: Översikt över API:er för Experience Rollouts som gör att du kan skapa, läsa, uppdatera och ta bort funktionsflaggor, funktionsgrupper och releaser programmatiskt.
-source-git-commit: 6ecedbfc6c7de392f214f3f8f2e71aa18e1bacb9
+source-git-commit: db719ba7b9db91aea818d8ef216a28fcedc6aa65
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Med API:erna för Experience Rollouts kan ni hantera funktionsflaggor, funktions
 Följande hanterings-API:er är tillgängliga:
 
 * [Hanterings-API:t för funktionsflaggor](feature-flags-management-api.md) - Skapa, läsa, uppdatera och ta bort funktionsflaggor för ett program.
-* [API för hantering av funktionsgrupper](feature-group-management-api.md) - Skapa, läsa, uppdatera, ta bort och kontrollera automatiserade utrullningsplaner för funktionsgrupper.
+* [API för hantering av funktionsgrupper](feature-group-management-api.md) - Skapa, läsa, uppdatera och ta bort funktionsgrupper.
 * [API:er för versionshantering](release-management-apis.md) - Skapa och redigera funktionsgrupper och releaser för olika team.
 
 ## Gemensamma krav {#common-requirements}
@@ -45,6 +45,5 @@ Följande guider hjälper dig att skapa korrekta API-nyttolaster:
 
 ## Se även {#see-also}
 
-* [GET Feature API V3](../feature-api/get-feature-api-v3.md)
-* [GET Feature API V2](../feature-api/get-feature-api-v2.md)
+* **GET Feature API V3** och **GET Feature API V2** - se API:t för funktioner i den här handboken för fullständiga referenser.
 * [Prenumerera på API-programmet](../guides/integrate/subscribe-to-api-application.md)
