@@ -2,13 +2,13 @@
 title: Kom igång med dynamiska rapporter
 description: Med dynamiska rapporter kan du dra och släppa variabler och dimensioner i frihandsmiljön och analysera hur framgångsrika era kampanjer är.
 level: Beginner
-badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till användare som migrerats till Campaign Standarden"
+badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 audience: end-user
 exl-id: d79f8a07-2322-4bc7-9d74-446db24a8d70
-source-git-commit: 34c6f8a137a9085b26c0ea8f78930cff6192cfc9
+source-git-commit: ccc6baf502ec66815ee3295537937fa101db4596
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 4%
+source-wordcount: '209'
+ht-degree: 0%
 
 ---
 
