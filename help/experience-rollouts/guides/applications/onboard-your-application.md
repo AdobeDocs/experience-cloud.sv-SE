@@ -1,17 +1,17 @@
 ---
 title: Anpassa applikationen
 description: Lär dig hur du kan integrera ett nytt program i Adobe Experience Rollouts så att teamet kan börja skapa och hantera funktionsflaggor.
-source-git-commit: 9bfe0e55e89c1d7fbd77cde63831a6a186820e24
+exl-id: d88c27a5-f490-4504-9764-5e4ce98fdf20
+source-git-commit: 454b5c719a5f8be82d1ed835da58bfca6316def2
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
-
 # Anpassa applikationen {#onboard-your-application}
 
-Du måste ha rollen **Admin** för att lägga till ett nytt program. Se [Användarroller](../teams/user-roles.md) om du behöver verifiera din roll eller begära den från din teamadministratör.
+Du måste ha rollen **Admin** för att lägga till ett nytt program. Kontakta teamadministratören om du behöver verifiera eller uppdatera din roll.
 
 ## Lägg till ett nytt program {#add-application}
 
@@ -45,5 +45,4 @@ När ditt program väl har anslutit kan ditt team börja skapa funktionsflaggor:
 ## Se även {#see-also}
 
 * [Hantera program](manage-applications.md)
-* [Användarroller](../teams/user-roles.md)
 * [Logga in på konsolen](../console/log-in-to-the-console.md)

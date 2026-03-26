@@ -1,43 +1,23 @@
 ---
-title: Miljööversikt
-description: Lär dig mer om scen- och produktionsmiljöerna i Adobe Experience Rollouts och när du ska använda respektive.
-source-git-commit: 9bfe0e55e89c1d7fbd77cde63831a6a186820e24
+title: Välj din sandlåda
+description: Lär dig hur du väljer rätt Adobe Experience Platform-sandlåda när du arbetar i Adobe Experience Rollouts.
+source-git-commit: c654ca1507abcefcff84cef9f99830042939805d
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 1%
+source-wordcount: '94'
+ht-degree: 0%
 
 ---
 
 
-# Miljööversikt {#environments}
+# Välj din sandlåda {#sandbox}
 
-Med Experience Rollouts får du olika miljöer så att du kan validera funktionsflaggorna innan du marknadsför ändringarna till dina Live-användare.
+Upplevelseutrullningar bygger på Adobe Experience Platform. Innan du arbetar med funktionsflaggor markerar du den sandlåda som motsvarar den aktuella miljön, precis som i andra Adobe Experience Platform-program.
 
-## Tillgängliga miljöer {#available-environments}
+## Välja en sandlåda {#how-to}
 
-| Miljö | Syfte |
-|---|---|
-| **Scen** | Testning och validering. Använd den här miljön för att konfigurera och testa funktionsflaggor innan du aktiverar dem i Produktion. |
-| **Produktion** | Live-utrullningar. De funktionsflaggor som konfigureras här utvärderas mot din verkliga användarbas. |
-
->[!IMPORTANT]
->
->Ändringar som görs på scenen överförs inte automatiskt till Produktion. Funktionsflaggor och målgruppsregler måste konfigureras separat i varje miljö.
-
-## Välja en miljö {#selecting}
-
-När du har loggat in på Experience Rollouts-konsolen väljer du miljön från miljöväljaren högst upp i gränssnittet. Kontrollera att du arbetar i rätt miljö innan du skapar eller ändrar funktionsflaggor.
-
-## God praxis {#best-practices}
-
-Följ dessa rekommendationer för att undvika konfigurationsfel och skydda produktionspubliken:
-
-* Skapa och testa alltid funktionsflaggor i **Stage** först.
-* Validera målgruppsregler, procentuella utrullningar och målinriktningslogik på scenen innan du replikerar i produktionen.
-* Använd [arbetsflödet mellan miljöer](../cross-environment/cross-environment-concept.md) för att visa och hantera flaggstatus i olika miljöer.
+Använd sandlådeväljaren i det övre navigeringsfältet i Experience Rollouts-konsolen för att välja rätt sandlåda innan du skapar eller ändrar funktionsflaggor.
 
 ## Se även {#see-also}
 
 * [Logga in på konsolen](log-in-to-the-console.md)
-* [Koppla miljöer till ett program](../cross-environment/associate-environments.md)
-* [Visa funktionsflaggor i olika miljöer](../cross-environment/view-feature-flags-across-environments.md)
+* [Begär åtkomst](request-access.md)

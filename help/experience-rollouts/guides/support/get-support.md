@@ -1,13 +1,13 @@
 ---
 title: Få support
 description: Ta reda på hur du får hjälp med Adobe Experience Rollouts, inklusive självbetjäningsresurser, och hur du skickar in en supportförfrågan när du behöver hjälp.
-source-git-commit: d824d85c6701edc9be314713bb8e9624b183e2d2
+exl-id: f4ba9c00-941b-4c33-b42f-087113d58b0d
+source-git-commit: 4a3133f014a9bb9d6ed26eb9d9f763db79ce63b3
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
-
 
 # Få support {#get-support}
 
@@ -19,8 +19,7 @@ Prova följande självbetjäningsalternativ innan du skickar in en supportförfr
 
 * **Sök i den här dokumentationen** - Använd sökfunktionen för att hitta guider, konceptförklaringar och hjälpavsnitt.
 * **Använd funktionen Workbench** — Diagnostisera funktionsflaggsproblem för specifika användare utan att skriva kod. Mer information finns i [Felsökning](troubleshooting.md).
-* **Kontrollera frisläppningstillstånd** - Bekräfta att funktionen är i rätt läge för den avsedda målgruppen. Se [Frigör lägen](../feature-flags/release-states.md).
-* **Verifiera målgruppsregler** - Granska målgruppsvillkor och procentuell konfiguration för funktionen. Se [Uppdatera målgruppsregler för releaser](../feature-flags/update-release-audience-rules.md).
+* **Verifiera funktionsflaggstatus** - Bekräfta att funktionsflaggan är publicerad och att målgruppsreglerna är korrekt konfigurerade.
 
 ## Skicka en supportförfrågan {#submit-request}
 

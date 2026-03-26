@@ -1,13 +1,13 @@
 ---
 title: Begär åtkomst
 description: Lär dig hur du begär åtkomst till ett Adobe Experience Rollouts-team och vilka roller som är tillgängliga för nya medlemmar.
-source-git-commit: 1c8fd9b42d08f657b4e6b16efae86faa04d15565
+exl-id: 30d05c90-2913-4e88-a8f9-28a142297337
+source-git-commit: 454b5c719a5f8be82d1ed835da58bfca6316def2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
-
 
 # Begär åtkomst {#request-access}
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Bekräfta följande innan du begär åtkomst:
 
-* Du vet vilket team du ska gå med i. Kontrollera med din produkt eller tekniska chef eller använd [Team och deras administratörer](teams-and-admins.md) för att identifiera ditt team och dess administratör.
+* Du vet vilket team du ska gå med i. Kontakta din produkt eller tekniska chef för att identifiera ditt team och dess administratör.
 * Du vet vilken miljö du behöver åtkomst till - **Stage**, **Production** eller båda.
 
 ## Begär åtkomst {#request-steps}
@@ -35,7 +35,7 @@ Du får en bekräftelse när begäran har skickats. Du kan övervaka status för
 
 ## Tillgängliga roller {#roles}
 
-Den roll du tilldelas avgör vilka åtgärder du kan utföra i konsolen. I [Användarroller](../teams/user-roles.md) finns en fullständig beskrivning av varje roll och dess behörigheter.
+Den roll du tilldelas avgör vilka åtgärder du kan utföra i konsolen. Kontakta teamadministratören om du är osäker på vilken roll du ska begära.
 
 ## När åtkomst har beviljats {#after-access}
 
@@ -43,4 +43,4 @@ När din begäran har godkänts loggar du in på Experience Rollouts-konsolen oc
 
 ## Behöver du hjälp? {#need-help}
 
-Om du är osäker på vilket team du ska gå med i, eller om det inte finns något team för ditt projekt än, kan du läsa [Skapa ett nytt team](create-a-new-team.md) eller kontakta din organisations Experience Rollouts-administratör.
+Om du är osäker på vilket team du ska gå med i, eller om det inte finns något team för projektet ännu, kontaktar du organisationens Experience Rollouts-administratör.

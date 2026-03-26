@@ -1,13 +1,13 @@
 ---
 title: API:er för versionshantering
 description: API-referens för API:er för Experience Rollouts-versionshantering, inklusive slutpunkter för att hämta, skapa och redigera releaser och funktionsgrupper för flera team.
-source-git-commit: 8a92b7a3e8c52da8bb2474f52c831e159420b878
+exl-id: e8d1d025-0645-4cf2-921f-d94c9f71282d
+source-git-commit: 454b5c719a5f8be82d1ed835da58bfca6316def2
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
-
 
 # API:er för versionshantering {#release-management-apis}
 
@@ -146,4 +146,3 @@ Uppdaterar en befintlig eller teamövergripande funktionsgrupp. Skicka det fulls
 * [Översikt över API:er för funktionshantering](feature-management-apis-overview.md)
 * [Hanterings-API för funktionsflaggor](feature-flags-management-api.md)
 * [API för hantering av funktionsgrupper](feature-group-management-api.md)
-* [Skapa en funktionsgrupp för flera team](../guides/feature-flags/create-cross-team-feature-group.md)

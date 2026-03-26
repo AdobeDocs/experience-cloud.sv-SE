@@ -1,13 +1,13 @@
 ---
 title: Hantera program
 description: Lär dig hantera program i Adobe Experience Rollouts, inklusive att lägga till nya program och förstå teamets ägarskap.
-source-git-commit: 53edbee220e7ef17c4a3ea066743192c1e9681f4
+exl-id: 6109fdd5-b5f5-41ca-8690-8aa78df50499
+source-git-commit: 8dc03f77f4e13ac9196df0910b1c00904b57a934
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
-
 
 # Hantera program {#manage-applications}
 
@@ -28,10 +28,8 @@ Varje program ägs av exakt ett team. Endast medlemmar i det teamet kan hantera 
 Den här ägarskapsmodellen påverkar även hur du strukturerar funktionsgrupper:
 
 * **Inom ditt team** - En produktversionsägare kan gruppera funktionsflaggor för program som ägs av samma team. Se [Funktionsgrupper för att styra flera funktioner](../../concepts/feature-groups-to-control-multiple-features.md).
-* **Över flera team** - Om du behöver gruppera funktionsflaggor från program som ägs av olika team kan du använda en teamövergripande funktionsgrupp som kräver rollen **Funktionsadministratör**.
 
 ## Se även {#see-also}
 
 * [Anpassa applikationen](onboard-your-application.md)
 * [Funktionsgrupper som styr flera funktioner](../../concepts/feature-groups-to-control-multiple-features.md)
-* [Användarroller](../teams/user-roles.md)

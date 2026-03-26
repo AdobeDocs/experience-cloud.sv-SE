@@ -1,13 +1,13 @@
 ---
 title: A/B-testning med funktionsflaggor
 description: Lär dig hur du kör A/B-tester med funktionsgrupper i Adobe Experience Rollouts genom att konfigurera flera varianter för en uppsättning funktionsflaggor.
-source-git-commit: d311efb995b20ffc17370d68d57dd84a8605896c
+exl-id: bb849049-229c-40ff-bbfe-7996f868bcc3
+source-git-commit: 454b5c719a5f8be82d1ed835da58bfca6316def2
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
-
 
 # A/B-testning med funktionsflaggor {#a-b-testing}
 
@@ -17,7 +17,7 @@ A/B-tester i Experience Rollouts utförs med **funktionsgrupper**. Genom att kon
 
 * Du har åtkomst till konsolen - se [Logga in på konsolen](../console/log-in-to-the-console.md)
 * Du ingår i ett team och programmet ingår
-* Du har rollen **Utvecklare** eller **Ägare av produktreleaser** - se [Användarroller](../teams/user-roles.md)
+* Du har rollen **Utvecklare** eller **Ägare av produktreleaser**
 * Du har skapat de funktionsflaggor som ska testas - se [Skapa din första funktionsflagga](create-your-first-feature-flag.md)
 
 ## Steg 1: Skapa en funktionsgrupp med flera varianter {#create}

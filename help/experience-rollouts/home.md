@@ -2,9 +2,9 @@
 title: Adobe Experience Rollouts
 description: Lär dig hur du använder Adobe Experience Rollouts för att leverera funktioner på ett säkert och gradvis sätt med kontrollerade utrullningar, funktionsflaggor och målinriktad målgruppshantering.
 exl-id: c400d75d-d928-4cf6-a094-1a2f443389f0
-source-git-commit: 65effd7e3b12404359e3693820bbf9e5080bea03
+source-git-commit: 4a3133f014a9bb9d6ed26eb9d9f763db79ce63b3
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Det börjar med tre steg att få värde från upplevelseutrullningar:
 
 3. **Integrera med ditt program** - Anslut din app till API:t för upplevelseutrullningar eller SDK så att den kan hämta och använda funktionsflaggor vid körning. Börja med [integreringsstegen](guides/integrate/integration-steps.md) för programtypen.
 
-När din första flagga är aktiv kan du förfina dess målgrupp, konfigurera en gradvis utrullning och marknadsföra den genom [releaselägen](guides/feature-flags/release-states.md) från sparad till fullständig utrullning.
+När din första flagga är aktiv kan du förfina målgruppen, konfigurera en gradvis utrullning och marknadsföra den från sparad till fullständig utrullning.
 
 ## Behöver du hjälp?
 

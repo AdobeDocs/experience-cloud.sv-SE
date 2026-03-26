@@ -2,9 +2,9 @@
 audience: user
 user-guide-title: Adobe Experience Rollouts
 user-guide-description: Lär dig hur du använder Adobe Experience Rollouts för att hantera funktionsflaggor, kontrollerade lanseringar och riktade releaser i alla program.
-source-git-commit: db719ba7b9db91aea818d8ef216a28fcedc6aa65
+source-git-commit: c654ca1507abcefcff84cef9f99830042939805d
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Experience Rollouts {#experience-rollouts}
 
-+ [Ökning](home.md)
++ [Översikt](home.md)
 + Komma igång {#get-started}
    + [Introduktion till upplevelselanseringar](getting-started/introduction.md)
    + [Varför använda upplevelseutrullningar](getting-started/why-use-experience-rollouts.md)
@@ -27,15 +27,8 @@ ht-degree: 0%
 + Användarhandböcker {#guides}
    + Komma igång med konsolen {#console}
       + [Logga in på Experience Rollouts-konsolen](guides/console/log-in-to-the-console.md)
-      + [Miljööversikt](guides/console/environments-overview.md)
+      + [Välj din sandlåda](guides/console/environments-overview.md)
       + [Begär åtkomst](guides/console/request-access.md)
-      + [Team och deras administratörer](guides/console/teams-and-admins.md)
-      + [Skapa ett nytt team](guides/console/create-a-new-team.md)
-   + Team {#teams}
-      + [Hantera team](guides/teams/manage-teams.md)
-      + [Användarroller](guides/teams/user-roles.md)
-      + [Lägg till medlemmar i ditt team](guides/teams/add-team-members.md)
-      + [Vanliga frågor om teamhantering](guides/teams/team-management-faq.md)
    + Program {#applications}
       + [Hantera program](guides/applications/manage-applications.md)
       + [Anpassa applikationen](guides/applications/onboard-your-application.md)
@@ -49,19 +42,13 @@ ht-degree: 0%
       + [SDK](guides/integrate/sdks.md)
       + [Integreringssteg](guides/integrate/integration-steps.md)
       + [Prenumerera på API-programmet i Adobe Developer Console](guides/integrate/subscribe-to-api-application.md)
-   + Funktionsflaggor och releaser {#feature-flags-releases}
-      + [Funktioner, funktionsgrupper och releaser](guides/feature-flags/features-feature-groups-releases.md)
+   + Funktionsflaggor {#feature-flags}
+      + [Funktioner och funktionsgrupper](guides/feature-flags/features-feature-groups-releases.md)
       + [Skapa din första funktionsflagga](guides/feature-flags/create-your-first-feature-flag.md)
       + [Ange en funktion som gradvis ska rulla ut](guides/feature-flags/set-feature-gradual-rollout.md)
       + [Skapa en funktionsgrupp](guides/feature-flags/create-a-feature-group.md)
       + [Ange att en funktionsgrupp ska rullas ut gradvis](guides/feature-flags/set-feature-group-gradual-rollout.md)
       + [A/B-testning med funktionsflaggor](guides/feature-flags/a-b-testing.md)
-      + [Releaser och teamöverskridande funktionsgrupper](guides/feature-flags/releases-and-cross-team-feature-groups.md)
-      + [Arbetsflöde från början till slut](guides/feature-flags/release-workflow-end-to-end.md)
-      + [Begär en release](guides/feature-flags/request-a-release.md)
-      + [Uppdatera publiceringsregler](guides/feature-flags/update-release-audience-rules.md)
-      + [Frigör lägen](guides/feature-flags/release-states.md)
-      + [Skapa en funktionsgrupp för flera team](guides/feature-flags/create-cross-team-feature-group.md)
       + [Vanliga frågor om versionshantering](guides/feature-flags/release-management-faqs.md)
       + [Analyser](guides/feature-flags/analytics.md)
       + [Schema](guides/feature-flags/schedule.md)

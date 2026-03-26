@@ -1,13 +1,13 @@
 ---
 title: Felsökning
 description: Använd workbench Experience Rollouts för att diagnostisera problem med utvärdering av funktionsflaggor för specifika användare, inklusive att kontrollera vilka funktioner som är aktiverade, inaktiverade eller omatchade för en viss användaridentitet.
-source-git-commit: d824d85c6701edc9be314713bb8e9624b183e2d2
+exl-id: d64e9573-8e18-46a1-a75a-5ae5bfc7c82d
+source-git-commit: 4a3133f014a9bb9d6ed26eb9d9f763db79ce63b3
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
-
 
 # Felsökning {#troubleshooting}
 
@@ -85,5 +85,3 @@ I följande tabell beskrivs vanliga problem och hur du undersöker dem med hjäl
 
 * [Få support](get-support.md)
 * [Kontakta support](contact-support.md)
-* [Uppdatera publiceringsregler](../feature-flags/update-release-audience-rules.md)
-* [Frigör lägen](../feature-flags/release-states.md)

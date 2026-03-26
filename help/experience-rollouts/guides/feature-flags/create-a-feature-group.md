@@ -1,13 +1,13 @@
 ---
 title: Skapa en funktionsgrupp
 description: Lär dig hur du skapar en funktionsgrupp i Adobe Experience Rollouts för att hantera flera funktionsflaggor mellan program i teamet som en enda enhet.
-source-git-commit: 9bfe0e55e89c1d7fbd77cde63831a6a186820e24
+exl-id: 58148df1-84ee-4a78-a4b4-71f74cd8ce0a
+source-git-commit: 454b5c719a5f8be82d1ed835da58bfca6316def2
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
-
 
 # Skapa en funktionsgrupp {#create-feature-group}
 
@@ -16,9 +16,8 @@ ht-degree: 0%
 Innan du skapar en funktionsgrupp gör du följande:
 
 * Du har åtkomst till konsolen Experience Rollouts - se [Logga in på konsolen](../console/log-in-to-the-console.md)
-* Du tillhör ett team - se [Hantera team](../teams/manage-teams.md)
 * Ditt program är introducerat - se [Ansluta ditt program](../applications/onboard-your-application.md)
-* Du har rollen **Utvecklare** eller **Ägare av produktreleaser** - se [Användarroller](../teams/user-roles.md)
+* Du har rollen **Utvecklare** eller **Ägare av produktreleaser**
 * Du har skapat de funktionsflaggor som du vill lägga till i gruppen - se [Skapa din första funktionsflagga](create-your-first-feature-flag.md)
 
 En introduktion till funktionsgrupper finns i [Funktionsgrupper för att styra flera funktioner](../../concepts/feature-groups-to-control-multiple-features.md).

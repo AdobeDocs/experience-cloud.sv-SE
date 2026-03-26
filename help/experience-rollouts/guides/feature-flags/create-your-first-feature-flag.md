@@ -1,13 +1,13 @@
 ---
 title: Skapa din första funktionsflagga
 description: Lär dig hur du skapar en funktionsflagga i Adobe Experience Rollouts, anger en målgrupp och testar den innan du distribuerar den till användarna.
-source-git-commit: ae420329b94b24fcd173734b414aecf1c5fc16ca
+exl-id: ae115120-8da9-465e-a556-c17591ea7054
+source-git-commit: 454b5c719a5f8be82d1ed835da58bfca6316def2
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
-
 
 # Skapa din första funktionsflagga {#create-feature-flag}
 
@@ -16,9 +16,8 @@ ht-degree: 0%
 Fyll i följande innan du skapar en funktionsflagga:
 
 * Du har åtkomst till konsolen Experience Rollouts - se [Logga in på konsolen](../console/log-in-to-the-console.md)
-* Du tillhör ett team - se [Hantera team](../teams/manage-teams.md)
 * Ditt program är introducerat - se [Ansluta ditt program](../applications/onboard-your-application.md)
-* Du har rollen **Utvecklare** eller **Ägare av produktreleaser** - se [Användarroller](../teams/user-roles.md)
+* Du har rollen **Utvecklare** eller **Ägare av produktreleaser**
 
 ## Steg 1: Skapa funktionsflaggan {#create}
 
@@ -61,4 +60,3 @@ Rollen **Utvecklare** är i begränsat läge. Utvecklare kan testa funktioner pr
 
 * [Ange en funktion som gradvis ska rulla ut](set-feature-gradual-rollout.md)
 * [Skapa en funktionsgrupp](create-a-feature-group.md)
-* [Användarroller](../teams/user-roles.md)

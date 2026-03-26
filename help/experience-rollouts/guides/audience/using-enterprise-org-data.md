@@ -1,13 +1,13 @@
 ---
 title: Använd företagsorganisationsdata i målgruppsregler
 description: Lär dig hur du använder företagsorganisations-ID:n som målgruppskriterier i Adobe Experience Rollouts för att rikta dig till specifika kundorganisationer.
-source-git-commit: 3f3f7145b3c58dc721cbeb850e9e8571e3255bb1
+exl-id: 74f97ec7-a809-41bf-a41d-bb57f033040f
+source-git-commit: 4a3133f014a9bb9d6ed26eb9d9f763db79ce63b3
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
-
 
 # Använd företagsorganisationsdata i målgruppsregler {#enterprise-org-data}
 
@@ -41,5 +41,4 @@ DMA-organ använder org-ID:n i formatet `XXXXXXXXXXXXXXXXXXXXXXXX@ADOBEORG`. Nä
 ## Se även {#see-also}
 
 * [Målgrupp i funktionsflaggor och funktionsgrupper](audience-in-feature-flags-and-feature-groups.md)
-* [Uppdatera publiceringsregler](../feature-flags/update-release-audience-rules.md)
 * [Komplexa målgruppsregler](complex-rules.md)

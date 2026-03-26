@@ -1,17 +1,17 @@
 ---
 title: Koppla miljöer till ett program
 description: Lär dig hur du länkar programinstanser mellan miljöer i Adobe Experience Rollouts så att du kan hantera funktionsflaggor på ett enhetligt sätt, från utveckling till produktion.
-source-git-commit: 5c99061a7f2aaaad98190166ea6fd79b7eb26dec
+exl-id: 53080db1-f257-4369-82ab-57c84395a40a
+source-git-commit: 454b5c719a5f8be82d1ed835da58bfca6316def2
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
-
 # Koppla miljöer till ett program {#associate-environments}
 
-Genom att länka programinstanser mellan miljöer blir det lättare att se och importera arbetsflöden mellan olika miljöer. Du måste ha rollen **Admin** för att konfigurera detta. Se [Användarroller](../teams/user-roles.md) om du behöver verifiera din roll.
+Genom att länka programinstanser mellan miljöer blir det lättare att se och importera arbetsflöden mellan olika miljöer. Du måste ha rollen **Admin** för att konfigurera detta. Kontakta teamadministratören om du behöver verifiera eller uppdatera din roll.
 
 Bakgrund till varför detta är användbart finns i [Koncept för flera miljöer](cross-environment-concept.md).
 

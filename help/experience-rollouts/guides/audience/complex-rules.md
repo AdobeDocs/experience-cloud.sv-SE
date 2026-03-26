@@ -1,13 +1,13 @@
 ---
 title: Komplexa målgruppsregler
 description: Lär dig hur du arbetar med stora eller komplexa målgruppsregler i Adobe Experience Rollouts, inklusive massvärdegränser och hur du delar upp regler över flera villkor.
-source-git-commit: 3f3f7145b3c58dc721cbeb850e9e8571e3255bb1
+exl-id: 37e037b6-45eb-4261-b580-30d94d8e55da
+source-git-commit: 4a3133f014a9bb9d6ed26eb9d9f763db79ce63b3
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
-
 
 # Komplexa målgruppsregler {#complex-rules}
 
@@ -36,4 +36,3 @@ Detta är samma mekanism som används för procentregler i kombination med andra
 
 * [Målgrupp i funktionsflaggor och funktionsgrupper](audience-in-feature-flags-and-feature-groups.md)
 * [Lägg till procentregler i målgruppskriterier](adding-percentage-rules.md)
-* [Uppdatera publiceringsregler](../feature-flags/update-release-audience-rules.md)
