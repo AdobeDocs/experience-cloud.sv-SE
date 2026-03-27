@@ -2,9 +2,9 @@
 audience: user
 user-guide-title: Adobe Experience Rollouts
 user-guide-description: Lär dig hur du använder Adobe Experience Rollouts för att hantera funktionsflaggor, kontrollerade lanseringar och riktade releaser i alla program.
-source-git-commit: c654ca1507abcefcff84cef9f99830042939805d
+source-git-commit: 2a946868f58e25f8aafbf3ccfcf6571e7d0d8d20
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,6 @@ ht-degree: 0%
       + [Webbtjänster](guides/integrate/web-services.md)
       + [SDK](guides/integrate/sdks.md)
       + [Integreringssteg](guides/integrate/integration-steps.md)
-      + [Prenumerera på API-programmet i Adobe Developer Console](guides/integrate/subscribe-to-api-application.md)
    + Funktionsflaggor {#feature-flags}
       + [Funktioner och funktionsgrupper](guides/feature-flags/features-feature-groups-releases.md)
       + [Skapa din första funktionsflagga](guides/feature-flags/create-your-first-feature-flag.md)
@@ -76,14 +75,3 @@ ht-degree: 0%
          + [Integreringsguide för Node.js SDK](guides/sdk-releases/nodejs/nodejs-sdk-integration-guide.md)
          + [Node.js Versionsinformation för SDK](guides/sdk-releases/nodejs/nodejs-sdk-release-notes.md)
       + [SDK prestandatester](guides/sdk-releases/java-sdk-benchmarking.md)
-+ Funktions-API {#feature-api}
-   + [GET Feature API V3](feature-api/get-feature-api-v3.md)
-   + [GET Feature API V2](feature-api/get-feature-api-v2.md)
-+ Hanterings-API {#management-api}
-   + [Översikt över API:er för funktionshantering](management-api/feature-management-apis-overview.md)
-   + [Hanterings-API för funktionsflaggor](management-api/feature-flags-management-api.md)
-   + [API för hantering av funktionsgrupper](management-api/feature-group-management-api.md)
-   + [API:er för versionshantering](management-api/release-management-apis.md)
-   + [Hämta klient-ID för ett program](management-api/get-client-id.md)
-   + [Hämta önskade målgruppskriterier](management-api/get-audience-criteria.md)
-   + [API för hanteringskorrigering](management-api/management-patch-api.md)

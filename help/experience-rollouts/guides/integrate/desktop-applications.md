@@ -1,31 +1,25 @@
 ---
 title: Datorprogram
-description: Lär dig hur du integrerar Adobe Experience Rollouts i ett datorprogram med funktionens API V2.
-source-git-commit: b82520eebe0070b5f76e0f7daeb2bb79a4bccca0
+description: Lär dig hur du integrerar Adobe Experience Rollouts i ett datorprogram med SDK.
+exl-id: e26c8af8-893a-43f4-905c-7292cc887900
+source-git-commit: 2a946868f58e25f8aafbf3ccfcf6571e7d0d8d20
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '73'
 ht-degree: 0%
 
 ---
 
-
 # Datorprogram {#desktop-applications}
 
-Datorapplikationer kan integreras med Experience Rollouts genom att göra direkta REST API-anrop. Använd **funktions-API V2** för skrivbordsklienter.
+Datorapplikationer kan integreras med Experience Rollouts via SDK. Kontakta din Adobe-representant om du vill ha hjälp med integrering av din datorstack.
 
-Se **GET Feature API V2** i API:t för funktioner i den här handboken för fullständig API-referens.
-
-## Integrationskrav {#requirements}
-
-Skrivbordsklienter måste
-
-* **Hedra TTL-värdet** som returnerades i API-svaret. TTL definierar hur länge klienten ska cachelagra funktionsflaggdata innan API:t anropas igen. Implementera ett testfall som validerar det här beteendet för att säkerställa att äldre programversioner försätts i viloläge korrekt när inga funktionsflaggor hanteras.
-* **Hantera HTTP-felscenarier smidigt**. Bygg i en reservfunktionsuppsättning så att programmet fortsätter att fungera om API:t inte är tillgängligt för tillfället.
-* **Underhåll en detaljerad integreringstestplan** som omfattar både TTL-värdet och felhanteringskraven ovan.
+>[!NOTE]
+>
+>SDK-dokumentation för datorer förbereds och kommer snart att vara tillgänglig.
 
 ## Program-ID {#app-id}
 
-Skrivbordsklienter kan använda en **produktkod och produktversion** som programidentifierare när API anropas, i stället för ett vanligt klient-ID.
+Skrivbordsklienter kan använda en **produktkod och produktversion** som program-ID.
 
 ## Se även {#see-also}
 

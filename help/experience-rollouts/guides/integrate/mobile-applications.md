@@ -1,19 +1,21 @@
 ---
 title: Mobilappar
-description: Lär dig integrera Adobe Experience Rollouts i en mobilapplikation med funktionens API V3.
-source-git-commit: b82520eebe0070b5f76e0f7daeb2bb79a4bccca0
+description: Lär dig hur du integrerar Adobe Experience Rollouts i ett mobilprogram med SDK för mobila enheter.
+exl-id: 27a43994-25e7-4a2c-b01c-ae98d089413d
+source-git-commit: 2a946868f58e25f8aafbf3ccfcf6571e7d0d8d20
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '68'
 ht-degree: 0%
 
 ---
 
-
 # Mobilappar {#mobile-applications}
 
-Mobilprogram kan integreras med Experience Rollouts genom att anropa **funktions-API V3** för att hämta funktionsflaggor och använda villkorsstyrd logik i programkoden.
+Mobilapplikationer kan integreras med Experience Rollouts via den mobila SDK-appen.
 
-Se **GET Feature API V3** i API:t för funktioner i den här handboken för den fullständiga API-referensen, inklusive parameterbegäran, svarsformat och exempelanrop.
+>[!NOTE]
+>
+>Mobile SDK-dokumentation förbereds och kommer snart att finnas tillgänglig. Kontakta din Adobe-representant för att få hjälp med tidig åtkomst.
 
 ## Integreringssteg {#integration-steps}
 

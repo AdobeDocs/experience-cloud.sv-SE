@@ -1,13 +1,13 @@
 ---
 title: Integreringsguide för Node.js SDK
 description: Lär dig hur du integrerar Experience Rollouts Node.js SDK i din backend-tjänst för att hämta och utvärdera funktionsflaggor.
-source-git-commit: 9bfe0e55e89c1d7fbd77cde63831a6a186820e24
+exl-id: 063829fe-6933-45ff-add4-285ca7391778
+source-git-commit: 2a946868f58e25f8aafbf3ccfcf6571e7d0d8d20
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
-
 
 # Integreringsguide för Node.js SDK {#nodejs-sdk-integration-guide}
 
@@ -15,14 +15,14 @@ Experience Rollouts Node.js SDK är ett serversidesbibliotek som är avsett för
 
 >[!NOTE]
 >
->SDK Node.js är endast avsett för serverbruk. För webbprogram på klientsidan anropar du funktionens API V3 REST-slutpunkt direkt.
+>SDK Node.js är endast avsett för serverbruk. För webbprogram på klientsidan använder du webb-SDK. Dokumentationen för Web SDK förbereds och kommer snart att vara tillgänglig.
 
 ## Förutsättningar {#prerequisites}
 
 Innan du integrerar Node.js SDK måste du se till att du har:
 
 * Ett Node.js-program på serversidan
-* En **API-nyckel** och **tjänsttoken** som hämtats via Adobe Developer Console - se [Prenumerera på API-programmet](../../integrate/subscribe-to-api-application.md)
+* En **API-nyckel** och **tjänsttoken** som hämtats via Adobe Developer Console - kontakta Experience Rollouts-support för att få ditt klient-ID tillåtslista
 * Ditt **klient-ID för programmet** som är registrerat i Experience Rollouts-konsolen - se [Anlita ditt program](../../applications/onboard-your-application.md)
 
 ## Installera SDK {#install}
@@ -160,5 +160,4 @@ floodgateClient.createInstance(
 
 * [Node.js Versionsinformation för SDK](nodejs-sdk-release-notes.md)
 * [SDK](../../integrate/sdks.md)
-* [Prenumerera på API-programmet](../../integrate/subscribe-to-api-application.md)
 * [Integreringssteg](../../integrate/integration-steps.md)

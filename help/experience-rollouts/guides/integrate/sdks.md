@@ -1,13 +1,13 @@
 ---
 title: SDK
 description: Läs mer om SDK-arkitekturen i Adobe Experience Rollouts och de tillgängliga SDK:erna för Java och Node.js.
-source-git-commit: b82520eebe0070b5f76e0f7daeb2bb79a4bccca0
+exl-id: 110a440d-b52a-4e1e-a94f-86f9741a223a
+source-git-commit: 2a946868f58e25f8aafbf3ccfcf6571e7d0d8d20
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
-
 
 # SDK {#sdks}
 
@@ -48,15 +48,6 @@ Installationsanvisningar finns i [Java SDK-integreringsguiden](../sdk-releases/j
 Node.js SDK distribueras via npm.
 
 Installationsanvisningar finns i [Integreringsguiden för Node.js SDK](../sdk-releases/nodejs/nodejs-sdk-integration-guide.md).
-
-## Välja mellan SDK och REST API {#sdk-vs-api}
-
-| Scenario | Rekommendation |
-|---|---|
-| Backend Java or Node.js service | Använd rätt SDK för automatisk cachning och förenklad integrering |
-| Annat backend-språk | Använd funktions-API:t V3 direkt - se API:t för funktioner i den här handboken |
-| Webb- eller mobilapplikationer | Använd funktions-API:t V3 direkt - se API:t för funktioner i den här handboken |
-| Skrivbordsprogram | Använd funktions-API:t V2 direkt - se API:t för funktioner i den här handboken |
 
 ## Se även {#see-also}
 

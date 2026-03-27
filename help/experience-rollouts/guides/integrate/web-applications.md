@@ -1,19 +1,21 @@
 ---
 title: Webbprogram
-description: Lär dig hur du integrerar Adobe Experience Rollouts i ett webbprogram med hjälp av funktions-API V3.
-source-git-commit: b82520eebe0070b5f76e0f7daeb2bb79a4bccca0
+description: Lär dig integrera Adobe Experience Rollouts i ett webbprogram med SDK på webben.
+exl-id: 9b5d744a-263d-4b10-8745-2891f111519f
+source-git-commit: 2a946868f58e25f8aafbf3ccfcf6571e7d0d8d20
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '68'
 ht-degree: 0%
 
 ---
 
-
 # Webbprogram {#web-applications}
 
-Webbprogram kan integreras med Experience Rollouts genom att anropa **funktions-API V3** för att hämta funktionsflaggor och placera villkorlig logik bakom dem i programkoden.
+Webbapplikationer kan integreras med Experience Rollouts via SDK på webben.
 
-Se **GET Feature API V3** i API:t för funktioner i den här handboken för den fullständiga API-referensen, inklusive parameterbegäran, svarsformat och exempelanrop.
+>[!NOTE]
+>
+>Dokumentationen för Web SDK förbereds och kommer snart att vara tillgänglig. Kontakta din Adobe-representant för att få hjälp med tidig åtkomst.
 
 ## Integreringssteg {#integration-steps}
 

@@ -1,13 +1,13 @@
 ---
 title: Integreringsguide för Java SDK
 description: Lär dig hur du integrerar Experience Rollouts Java SDK i din serverdelstjänst för att hämta och utvärdera funktionsflaggor.
-source-git-commit: 9bfe0e55e89c1d7fbd77cde63831a6a186820e24
+exl-id: 7c12bd6c-1883-4f1c-985f-a2b0432e61ce
+source-git-commit: 2a946868f58e25f8aafbf3ccfcf6571e7d0d8d20
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
-
 
 # Integreringsguide för Java SDK {#java-sdk-integration-guide}
 
@@ -19,7 +19,7 @@ Innan du integrerar Java SDK måste du se till att du har:
 
 * JDK 11 eller senare (krävs från SDK version 3.0.0 och framåt; tidigare versioner stöder JDK 8+)
 * Ett Maven-baserat byggsystem
-* Ett **API-nyckel** och **tjänsttoken**-klient-ID från ditt Adobe Developer Console-projekt - se [Prenumerera på API-programmet](../../integrate/subscribe-to-api-application.md)
+* Ett **API-nyckel** och **tjänsttoken**-klient-ID från ditt Adobe Developer Console-projekt - kontakta Experience Rollouts-support om du vill tillåtslista ditt klient-ID
 * Ditt **klient-ID för programmet** som är registrerat i Experience Rollouts-konsolen - se [Anlita ditt program](../../applications/onboard-your-application.md)
 
 ## Lägg till Maven-beroendet {#maven-dependency}
@@ -188,5 +188,4 @@ try {
 
 * [Versionsinformation för Java SDK](java-sdk-release-notes.md)
 * [SDK](../../integrate/sdks.md)
-* [Prenumerera på API-programmet](../../integrate/subscribe-to-api-application.md)
 * [Integreringssteg](../../integrate/integration-steps.md)

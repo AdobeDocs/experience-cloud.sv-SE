@@ -1,13 +1,13 @@
 ---
 title: Starthandbok
 description: Följ de här stegen för att integrera ditt program med Adobe Experience Rollouts, från att begära åtkomst till att skapa din första funktionsflagga.
-source-git-commit: 9bfe0e55e89c1d7fbd77cde63831a6a186820e24
+exl-id: 7aa09535-45fa-4ddf-9e3f-a23f8a8ee666
+source-git-commit: 2a946868f58e25f8aafbf3ccfcf6571e7d0d8d20
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
-
 
 # Starthandbok {#startup-guide}
 
@@ -29,21 +29,17 @@ Före introduktionen ska du förbereda följande:
 | **Klienter på serversidan** | Om du integrerar med en SDK på serversidan behöver du ett ID för administratörsklient med rätt behörigheter. |
 | **Skrivbordsklienter** | En produktkod och en produktversion kan användas i stället för ett klient-ID. |
 
-## Steg 3: Prenumerera på API:t för upplevelseutrullningar {#step-3-subscribe}
+## Steg 3: Hämta dina autentiseringsuppgifter {#step-3-credentials}
 
-Prenumerera på API:t för Experience Rollouts via Adobe Developer Console så att ditt program kan anropa funktionsflaggans slutpunkter. Se [Prenumerera på API-programmet i Adobe Developer Console](subscribe-to-api-application.md).
+Om du integrerar via en SDK på serversidan behöver du ett klient-ID för tjänsttoken. Kontakta Experience Rollouts-support om du vill få ditt klient-ID tillåtslista innan du kan göra API-anrop från SDK.
 
->[!NOTE]
->
->Om du integrerar via en SDK på serversidan behöver du ett klient-ID för tjänsttoken. Kontakta supplevelseutrullningar för att få ditt klient-ID tillåtslista.
-
-## Steg 4: Integrera med en SDK eller API {#step-4-integrate}
+## Steg 4: Integrera med en SDK {#step-4-integrate}
 
 Följ [integreringsstegen](integration-steps.md) för din programtyp. Välj den sökväg som passar din hög:
 
 * **Webbtjänster** → Java SDK eller Node.js SDK
-* **Webb- och mobilappar** → Funktions-API V3
-* **Datorprogram** → Funktions-API V2
+* **Webb och mobilappar** → Web SDK eller mobil SDK (kommer snart)
+* **Datorprogram** → SDK (kommer snart)
 
 ## Steg 5: Skapa och testa flaggan för den första funktionen {#step-5-feature-flag}
 

@@ -1,13 +1,13 @@
 ---
 title: Integreringssteg
-description: Följ integreringsstegen för din programtyp för att ansluta Adobe Experience Rollouts till din webbtjänst, webbapp, mobilapp eller datorprogram.
-source-git-commit: b82520eebe0070b5f76e0f7daeb2bb79a4bccca0
+description: Följ integreringsstegen för din programtyp för att ansluta Adobe Experience Rollouts till din webbtjänst, webben, mobilapp eller datorprogram med hjälp av tillgängliga SDK:er.
+exl-id: d584bdf4-9031-40e7-a7f0-807c619bbba1
+source-git-commit: 2a946868f58e25f8aafbf3ccfcf6571e7d0d8d20
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
-
 
 # Integreringssteg {#integration-steps}
 
@@ -27,23 +27,23 @@ Följ integreringsguiden för [Node.js SDK](../sdk-releases/nodejs/nodejs-sdk-in
 
 **Andra språk**
 
-Om din hög inte finns med i listan ovan kan du integrera direkt med **funktions-API:t V3** (se avsnittet Funktions-API i den här handboken). Kontakta supporten för upplevelseutrullningar om du behöver hjälp.
+Kontakta Experience Rollouts support för vägledning om din specifika stack.
 
 ## Webb- och mobilapplikationer {#web-mobile}
 
-Webb- och mobilprogram anropar **funktions-API V3** för att hämta funktionsflaggor för den aktuella användaren och tillämpa villkorsstyrd logik i programmet.
+Webb- och mobilapplikationer kan integreras via SDK på webben respektive SDK på mobilen.
 
-Se **GET Feature API V3** i API:t för funktioner i den här handboken för fullständig API-referens.
+>[!NOTE]
+>
+>Dokumentationen för SDK och SDK för mobiler håller på att färdigställas och kommer snart att vara tillgänglig. Kontakta din Adobe-representant för att få hjälp med tidig åtkomst.
 
 ## Datorprogram {#desktop}
 
-Skrivbordsprogram anropar **funktions-API V2** för att hämta funktionsflaggor.
+Programmen kan integreras via SDK. Kontakta din Adobe-representant om du vill ha hjälp med integrering av din datorstack.
 
-Se **GET Feature API V2** i API:t för funktioner i den här handboken för fullständig API-referens.
-
->[!IMPORTANT]
+>[!NOTE]
 >
->Skrivbordsklienter måste respektera TTL-värdet i API-svaret och implementera en smidig felhantering för att API inte ska vara tillgängligt. Mer information om krav finns i [Datorprogram](desktop-applications.md).
+>SDK-dokumentation för datorer förbereds och kommer snart att vara tillgänglig.
 
 ## Se även {#see-also}
 
