@@ -1,24 +1,24 @@
 ---
 title: Begär en release
 description: Lär dig hur du begär en ny samordnad release i Adobe Experience Rollouts och vilken information som ska tillhandahållas.
-source-git-commit: d311efb995b20ffc17370d68d57dd84a8605896c
+exl-id: 8eee84b2-fbd5-4713-90ac-92fd7b74c163
+source-git-commit: f4c365e1a0e61ba3dec298dfa8ab0d9e74e1259a
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
-
 
 # Begär en release {#request-a-release}
 
 ## Förutsättningar {#prerequisites}
 
-* Du har rollen **Versionshanteraren** - se [Användarroller](../teams/user-roles.md)
+* Du har rollen **Versionshanteraren** - se <!-- broken link[User roles](../teams/user-roles.md) -->
 * Ditt program är introducerat - se [Ansluta ditt program](../applications/onboard-your-application.md)
 
 >[!TIP]
 >
->Granska [Releaser och teamets funktionsgrupper](releases-and-cross-team-feature-groups.md) innan du begär en release. En funktionsgrupp för flera team kan tillgodose dina behov med mindre omkostnader - den är självbetjäning och stöder en mer omfattande målgruppsanpassning.
+>Granska <!--[Releases and cross-team feature groups](releases-and-cross-team-feature-groups.md)--> innan du begär en release. En funktionsgrupp för flera team kan tillgodose dina behov med mindre omkostnader - den är självbetjäning och stöder en mer omfattande målgruppsanpassning.
 
 ## Skicka en supportförfrågan {#submit}
 

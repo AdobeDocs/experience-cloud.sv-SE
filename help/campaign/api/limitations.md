@@ -9,10 +9,10 @@ level: Experienced
 mini-toc-levels: 1
 badge: label="BEGRÄNSAD TILLGÄNGLIGHET" type="Informative" url="../campaign-standard-migration-home.md" tooltip="Begränsat till migrerade Campaign Standard-användare"
 exl-id: 45acebb1-9325-4e26-8fe9-cc73f745d801
-source-git-commit: 11c49b273164b632bcffb7de01890c6f9d7ae9c2
+source-git-commit: 6baa9bef7eae1ab8ffe9ecd426c6ba4580e8c9d7
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 1%
+source-wordcount: '1060'
+ht-degree: 0%
 
 ---
 
@@ -49,9 +49,9 @@ För närvarande är REST API:erna som listas nedan tillgängliga:
 >För närvarande är REST API:t för **transaktionsmeddelanden** inte tillgängligt.
 >
 >REST-API:erna som anges nedan är inaktuella och kan inte användas:
->* Marknadsföringshistorik
+>* Marknadshistorik
 >* Organisationsenheter
->* Integritetshantering
+>* Sekretesshantering
 
 ## Filtrering
 
@@ -114,7 +114,7 @@ I avsnittet nedan listas skillnaderna mellan felkoder och meddelanden för Campa
 | Använda PKey i URI:n och en annan PKey i begärandetexten | 500 - Det finns redan en tjänst med samma nyckel, SVC4. PGS-220000 PostgreSQL-fel: FEL: Dubblettnyckelvärdet bryter mot den unika begränsningen &quot;nmsservice_name&quot; DETAIL: Key (sname)=(SVC4) finns redan. | 500 - Ett fel har inträffat. Kontakta administratören. |
 | Använda ett icke-befintligt raw-id i URI | 404 - RST-360011 Ett fel har inträffat. Kontakta administratören. Det gick inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl:0 (dokument med schemat service och namnet adobe_nl) | 404 - Det går inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl (dokument med schemat service och namnet adobe_nl) |
 | Använda ett icke-befintligt raw-id i begärandetexten | 404 - RST-360011 Ett fel har inträffat. Kontakta administratören. Det gick inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl (dokument med schemat service och namnet adobe_nl) | 404 - Det går inte att hitta dokumentet med sökvägen Service från nyckeln adobe_nl (dokument med schemat service och namnet adobe_nl) |
-| – | 500 - RST-360011 Ett fel har inträffat - kontakta administratören. | 500 - Ett fel har inträffat. Kontakta administratören. |
+| - | 500 - RST-360011 Ett fel har inträffat - kontakta administratören. | 500 - Ett fel har inträffat. Kontakta administratören. |
 | Infoga en profil/tjänst med ett ogiltigt enum-värde för kön (eller något annat) | 500 - RST-360011 Ett fel har inträffat - kontakta administratören. Värdet invalid är inte giltigt för nms:recipient:kön-uppräkningen i fältet @kön | 500 -Ett fel har inträffat - kontakta administratören. |
 
 ## Profil - tidszon
@@ -129,10 +129,12 @@ Campaign Standard Workflow GET API returnerar parameternamn som arbetsflödesins
 
 Campaign v8 stöder inte variabler för annonsarbetsflödesinstanser, men förväntar sig att utvecklare ska veta vad de är. Efter migreringen måste parameterinformationen i POST-begärandetexten konstrueras utan att parameterinformationen i GET API-svaret är tillgänglig.
 
-<!--## Transactional messages
+<!--
+## Transactional messages
 
 * With Campaign Standard, a POST request returns empty fields for elements and attributes in the request body. With Campaign v8, the response returns values that match the ones in the request body instead.
 
 * When publishing an event configuration, the API preview panel displays the REST URL alongside the request body syntax.
 
-    Since Campaign v8 does not support event configuration fields definition (event creation is just adding a value to eventType enumeration), there is no API preview panel when adding an event type. The REST URL is displayed  in the transactional message user interface once an event transactional message is published.-->
+    Since Campaign v8 does not support event configuration fields definition (event creation is just adding a value to eventType enumeration), there is no API preview panel when adding an event type. The REST URL is displayed  in the transactional message user interface once an event transactional message is published.
+-->
