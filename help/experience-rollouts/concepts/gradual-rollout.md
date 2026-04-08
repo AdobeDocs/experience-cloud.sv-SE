@@ -1,13 +1,13 @@
 ---
 title: gradvis utrullning
 description: Se hur ni med hjälp av gradvis utrullning i Experience Rollouts kan fasa in leveransen av funktioner i produktionen på ett säkert sätt, med feedback i realtid och minimala risker.
-source-git-commit: 1c8fd9b42d08f657b4e6b16efae86faa04d15565
+exl-id: ede24236-de19-4008-893c-e67bd82e23e3
+source-git-commit: fcb1d36fc92b3954a902d818a98f579672c577e9
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
-
 
 # gradvis utrullning {#gradual-rollout}
 
@@ -18,7 +18,7 @@ En gradvis utrullning fasar in en ny funktion i produktionen stegvis i stället 
 **Säkerhetsnät**
 Genom att släppa till en liten publik först kan du spåra feedback och övervaka beteenden i produktionen innan du expanderar. Om problem uppstår är effekten begränsad och funktionen kan stängas av omedelbart - utan kodändring eller omdistribution.
 
-**Hantering av backend-belastning**
+**Hantering av bakgrundsbelastning**
 Om du öppnar en funktion för alla användare samtidigt kan serverbelastningen bli plötslig. En gradvis utrullning distribuerar trafikökningen över tid, vilket gör att infrastrukturen kan skalas smidigt.
 
 **Återkoppling i realtid**
@@ -38,4 +38,3 @@ I varje steg kan en enskild åtgärd pausa utrullningen eller stänga av funktio
 ## Se även {#see-also}
 
 * [Funktionsflaggor för att aktivera och inaktivera funktioner](feature-flags-to-enable-disable-features.md)
-* [Versionshantering](release-management.md)

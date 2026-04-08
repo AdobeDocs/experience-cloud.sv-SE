@@ -2,9 +2,9 @@
 title: Integreringssteg
 description: Följ integreringsstegen för din programtyp för att ansluta Adobe Experience Rollouts till din webbtjänst, webben, mobilapp eller datorprogram med hjälp av tillgängliga SDK:er.
 exl-id: d584bdf4-9031-40e7-a7f0-807c619bbba1
-source-git-commit: 2a946868f58e25f8aafbf3ccfcf6571e7d0d8d20
+source-git-commit: fcb1d36fc92b3954a902d818a98f579672c577e9
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -15,19 +15,11 @@ Välj den integrationssökväg som matchar programtypen.
 
 ## Webbtjänster {#web-services}
 
-Backend-tjänster kan integreras med hjälp av en SDK på serversidan. Välj SDK för din teknikstack.
+Backend-tjänster kan integreras med hjälp av en SDK på serversidan. Kontakta Experience Rollouts support för vägledning om din specifika stack.
 
-**Java**
-
-Följ [Java SDK-integreringsguiden](../sdk-releases/java/java-sdk-integration-guide.md) för konfiguration, beroendekonfiguration och initiering.
-
-**Node.js**
-
-Följ integreringsguiden för [Node.js SDK](../sdk-releases/nodejs/nodejs-sdk-integration-guide.md) för installation och initiering.
-
-**Andra språk**
-
-Kontakta Experience Rollouts support för vägledning om din specifika stack.
+>[!NOTE]
+>
+>SDK-dokumentation på serversidan förbereds för närvarande och kommer snart att vara tillgänglig. Kontakta din Adobe-representant för att få hjälp med tidig åtkomst.
 
 ## Webb- och mobilapplikationer {#web-mobile}
 

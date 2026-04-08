@@ -1,13 +1,13 @@
 ---
 title: Funktionsgrupper som styr flera funktioner
 description: Lär dig hur funktionsgrupper i Experience Rollouts gör att ni kan paketera och hantera relaterade funktionsflaggor i olika program som en enda enhet.
-source-git-commit: 1c8fd9b42d08f657b4e6b16efae86faa04d15565
+exl-id: dfeb7eff-34f1-4cb5-9c3e-a40d1eda3016
+source-git-commit: fcb1d36fc92b3954a902d818a98f579672c577e9
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
-
 
 # Funktionsgrupper som styr flera funktioner {#feature-groups}
 
@@ -21,14 +21,5 @@ Ta till exempel en samarbetsfunktion som innefattar ändringar i ett datorprogra
 
 ## Gruppering mellan program {#cross-application}
 
-Funktionsgrupper har stöd för funktionsövergripande hantering mellan program så länge flaggorna tillhör **samma team** i Experience Rollouts. Ett team kan äga flera program, så att relaterade flaggor i alla dessa program kan grupperas tillsammans.
+Funktionsgrupper har stöd för funktionsövergripande hantering för flera program. Relaterade flaggor mellan flera program kan grupperas tillsammans.
 
-## Funktionsgrupper jämfört med releaser {#vs-releases}
-
-| | Funktionsgrupp | Frigör |
-|---|---|---|
-| Omfång | Inom ett och samma team | Över flera team |
-| Använd skiftläge | Koordinera flaggor i ditt team | Samordning mellan stora team för att starta |
-| Behörighet krävs | Teamnivå | Högre (versionshanteraren) |
-
-Om de funktionsflaggor som du vill gruppera tillhör program som ägs av olika team använder du en [release](release-management.md) i stället för en funktionsgrupp.

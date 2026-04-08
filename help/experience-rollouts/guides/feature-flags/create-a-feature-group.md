@@ -2,9 +2,9 @@
 title: Skapa en funktionsgrupp
 description: Lär dig hur du skapar en funktionsgrupp i Adobe Experience Rollouts för att hantera flera funktionsflaggor mellan program i teamet som en enda enhet.
 exl-id: 58148df1-84ee-4a78-a4b4-71f74cd8ce0a
-source-git-commit: 454b5c719a5f8be82d1ed835da58bfca6316def2
+source-git-commit: fcb1d36fc92b3954a902d818a98f579672c577e9
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Tilldela de funktionsflaggor som ska styras av den här gruppen:
 
 ## Steg 5: Schema (valfritt) {#schedule}
 
-Du kan schemalägga att funktionsgruppen ska aktiveras vid ett senare datum och en senare tidpunkt. Mer information finns i [Schema](schedule.md).
+Du kan schemalägga att funktionsgruppen ska aktiveras vid ett framtida datum och en framtida tidpunkt med alternativet **Schema** i inställningarna för funktionsgruppen.
 
 ## Se även {#see-also}
 

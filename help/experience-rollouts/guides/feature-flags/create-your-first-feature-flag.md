@@ -2,9 +2,9 @@
 title: Skapa din första funktionsflagga
 description: Lär dig hur du skapar en funktionsflagga i Adobe Experience Rollouts, anger en målgrupp och testar den innan du distribuerar den till användarna.
 exl-id: ae115120-8da9-465e-a556-c17591ea7054
-source-git-commit: 454b5c719a5f8be82d1ed835da58bfca6316def2
+source-git-commit: fcb1d36fc92b3954a902d818a98f579672c577e9
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ När du har lagt till målgruppsvillkor väljer du **Beräkna** i det nedre fäl
 
 ## Steg 4: Schema (valfritt) {#schedule}
 
-Du kan schemalägga en funktionsflagga att aktivera vid ett framtida datum och en framtida tidpunkt. Mer information finns i [Schema](schedule.md).
+Du kan schemalägga en funktionsflagga att aktivera vid ett framtida datum och en framtida tidpunkt med alternativet **Schema** i inställningarna för funktionsflaggan.
 
 ## Vanliga frågor: Jag kan inte lägga till en funktionsflagga som utvecklare {#faq}
 

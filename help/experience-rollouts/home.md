@@ -2,9 +2,9 @@
 title: Adobe Experience Rollouts
 description: Lär dig hur du använder Adobe Experience Rollouts för att leverera funktioner på ett säkert och gradvis sätt med kontrollerade utrullningar, funktionsflaggor och målinriktad målgruppshantering.
 exl-id: c400d75d-d928-4cf6-a094-1a2f443389f0
-source-git-commit: 4a3133f014a9bb9d6ed26eb9d9f763db79ce63b3
+source-git-commit: fcb1d36fc92b3954a902d818a98f579672c577e9
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Med Adobe Experience Rollouts kan produktteamen leverera nya funktioner gradvis 
 
 **Minska versionsrisken.** Dela upp stora ändringar i mindre, kontrollerade rollouter. Om ett fel eller prestandaproblem uppstår inaktiverar du bara den påverkade funktionen - resten av programmet förblir stabilt.
 
-**Koordinera mellan team.** Med funktionsgrupper för olika team kan flera team delta i en enda samordnad release där var och en hanterar sina egna funktionsflaggor samtidigt som de delar ett gemensamt lanseringsschema och målgrupp.
+**Koordinera mellan program.** Med funktionsgrupper kan du hantera flera funktionsflaggor samtidigt och dela en gemensam rollout-målgrupp mellan olika program.
 
 ## Använd din första funktion
 
@@ -37,4 +37,4 @@ När din första flagga är aktiv kan du förfina målgruppen, konfigurera en gr
 
 ## Behöver du hjälp?
 
-Om något inte beter sig som förväntat innehåller [felsökningsguiden](guides/support/troubleshooting.md) de vanligaste problemen. Om du vill ha mer information [kontaktar du support](guides/support/contact-support.md).
+Om något inte fungerar som det ska ska ska du kontakta din Adobe-representant.

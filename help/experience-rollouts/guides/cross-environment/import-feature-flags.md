@@ -1,51 +1,45 @@
 ---
 title: Importera funktionsflaggor
-description: Lär dig hur du importerar funktionsflaggor från en lägre miljö till en högre miljö i Adobe Experience Rollouts för att undvika att återskapa flaggkonfigurationer manuellt.
-source-git-commit: 5c99061a7f2aaaad98190166ea6fd79b7eb26dec
+description: Lär dig hur du importerar funktionsflaggor från en sandlåda till en annan i Adobe Experience Rollouts för att undvika att återskapa flaggkonfigurationer manuellt.
+exl-id: 37c84d75-a565-4202-8c99-f630e05b6bb6
+source-git-commit: fcb1d36fc92b3954a902d818a98f579672c577e9
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
 
-
 # Importera funktionsflaggor {#import-feature-flags}
 
-Med upplevelseöverrullningar kan du importera funktionsflaggor från en lägre miljö (till exempel Stage) till en högre miljö (till exempel Production). På så sätt slipper du återskapa flaggkonfigurationer manuellt, vilket minskar risken för att konfigurationen växlar mellan miljöer.
+Med Experience Rollouts kan du importera funktionsflaggor från en sandlåda (till exempel sandlåda 1) till en annan sandlåda (till exempel sandlåda 2). På så sätt slipper du återskapa flaggkonfigurationer manuellt, vilket minskar risken för konfigurationsväxling mellan sandlådor.
 
-## Förutsättningar {#prerequisites}
+## Steg 1: Gå till målsandlådan och -programmet {#step-1}
 
-Om du vill använda importarbetsflödet måste programinstanserna länkas mellan olika miljöer. Se [Koppla miljöer till ett program](associate-environments.md).
-
-## Steg 1: Gå till målmiljön och programmet {#step-1}
-
-Logga in på konsolen för **målmiljön** - den miljö du vill importera flaggorna *till*. Välj det program som du vill importera flaggor till i programlistrutan på sidan Funktionsflaggor.
+Logga in på konsolen för sandlådan **destination** - sandlådan som du vill importera flaggor *till*. Välj det program som du vill importera flaggor till i programlistrutan på sidan Funktionsflaggor.
 
 >[!IMPORTANT]
 >
->Den aktuella miljön och det valda programmet måste vara **målet**, inte källan. Om du till exempel vill importera en flagga från scenen till produktionen loggar du in på produktionskonsolen och väljer produktionsprogrammet.
+>Din aktuella sandlåda och det valda programmet måste vara **mål** - inte källan. Om du till exempel vill importera en flagga från sandbox 1 till sandbox 2 loggar du in på konsolen sandbox 2 och väljer sandbox 2.
 
 ## Steg 2: Öppna importdialogrutan {#step-2}
 
-Välj **Importera funktionsflaggor**. En dialogruta öppnas med källmiljö och program, ifyllda i förväg baserat på de länkade miljöer som konfigurerats för ditt program. Om det behövs kan du ändra källmiljö och program från listrutorna i dialogrutan.
+Välj **Importera funktionsflaggor**. En dialogruta öppnas med källsandlådan och -programmet, ifyllda i förväg baserat på tillgängliga program. Vid behov kan du ändra källsandlådan och -programmet från listrutorna i dialogrutan.
 
 ## Steg 3: Välj de funktionsflaggor som ska importeras {#step-3}
 
-I listan med funktionsflaggor i källmiljön väljer du de flaggor du vill importera. Du kan markera en, flera eller alla flaggor samtidigt.
+I listan med funktionsflaggor i källsandlådan väljer du de flaggor du vill importera. Du kan markera en, flera eller alla flaggor samtidigt.
 
-## Steg 4: Hantera befintliga flaggor (om det behövs) {#step-4}
+## Steg 4: Välj status för funktionsflaggor som ska importeras {#step-4}
 
-Om det redan finns en funktionsflagga med samma nyckel i målmiljön kommer Experience Rollouts att be dig bekräfta om du vill skriva över den. Granska den befintliga flaggkonfigurationen innan du bekräftar. Om du skriver över ersätts målflaggans inställningar med inställningarna från källan.
+Använd listrutan för att välja hur funktionsflaggorna ska importeras - antingen **Aktiverad**, **Inaktiverad** eller i deras **aktuella läge**. Som standard importeras funktionsflaggor i läget **Inaktiverad**.
 
 ## Viktiga anteckningar {#important-notes}
 
 Tänk på följande när du importerar funktionsflaggor:
 
-* Importerade flaggor är alltid inställda på läget **AV** i målmiljön, oavsett deras tillstånd i källmiljön. Du måste aktivera dem manuellt efter importen.
-* Om en flagga har schemalagts att aktiveras vid ett framtida datum och en framtida tidpunkt i källmiljön, överförs schemat **inte**. Du måste ange ett nytt schema i målmiljön om det behövs.
+* Om det redan finns en funktionsflagga med samma nyckel i målsandlådan importeras den inte.
 
 ## Se även {#see-also}
 
-* [Koppla miljöer till ett program](associate-environments.md)
-* [Visa funktionsflaggor i olika miljöer](view-feature-flags-across-environments.md)
-* [Koncept för flera miljöer](cross-environment-concept.md)
+* [Funktioner och funktionsgrupper](../feature-flags/features-feature-groups-releases.md)
+* [Skapa din första funktionsflagga](../feature-flags/create-your-first-feature-flag.md)

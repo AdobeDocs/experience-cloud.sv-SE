@@ -1,13 +1,13 @@
 ---
 title: Lägg till procentregler i målgruppskriterier
 description: Lär dig hur du lägger till procentbaserade regler inom målgruppskriterier i Adobe Experience Rollouts för att ange olika procentsatser för utrullning för olika målgruppssegment.
-source-git-commit: ae420329b94b24fcd173734b414aecf1c5fc16ca
+exl-id: 15a3c26f-31fc-4e73-aa0e-035dcbe7d770
+source-git-commit: fcb1d36fc92b3954a902d818a98f579672c577e9
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
-
 
 # Lägg till procentregler i målgruppskriterier {#adding-percentage-rules}
 
@@ -20,7 +20,7 @@ Vissa utrullningsscenarier kräver dock olika procentandelar för olika grupper,
 * 100 % av användare i Storbritannien och 50 % av användare i USA
 * Alla användare från en importerad e-postlista, plus 50 % av användarna från ett visst land
 
-I dessa fall ska du använda regeln **Procent** i profilavsnittet på fliken **Målgrupp** kombinerat med kapslad logik.
+I dessa fall använder du regeln **Procent** i kontextavsnittet på fliken **Målgrupp** kombinerat med kapslad logik.
 
 >[!TIP]
 >
@@ -28,10 +28,10 @@ I dessa fall ska du använda regeln **Procent** i profilavsnittet på fliken **M
 
 ## Lägga till en procentregel {#how-to-add}
 
-Alternativet **Procent** är tillgängligt som regel i profilavsnittet på fliken Målgrupp.
+Alternativet **Procent** är tillgängligt som regel i kontextavsnittet på fliken Målgrupp.
 
 1. Gå till fliken **Målgrupp** i funktionsflaggan eller funktionsgruppen.
-2. Lägg till en **procentregel** under **Profil** och ange önskat värde.
+2. Lägg till en **kontextprocentregel** under **Målgrupp** och ange önskat värde.
 3. Lägg till andra målgruppsvillkor som du behöver (t.ex. en landskapsregel).
 
 ## Kombinera procentregler med kapslad logik {#nested-logic}

@@ -1,13 +1,13 @@
 ---
 title: Vad är en funktionsflagga?
 description: Lär dig vilka funktionsflaggor som är och hur du kan aktivera och inaktivera programfunktioner under körning utan omdistribution.
-source-git-commit: 1c8fd9b42d08f657b4e6b16efae86faa04d15565
+exl-id: c4ed4ab5-0d73-4697-b05c-476d6e4010ce
+source-git-commit: fcb1d36fc92b3954a902d818a98f579672c577e9
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
-
 
 # Vad är en funktionsflagga? {#what-is-a-feature-flag}
 
@@ -19,4 +19,4 @@ Denna separation minskar avsevärt risken. Utvecklarna kan bygga och leverera ko
 
 >[!NOTE]
 >
->I Experience Rollouts är en funktionsflagga den mest atomiska enhetskontrollen. Den kan användas fristående för en enskild funktion, eller kombineras med andra flaggor i en [funktionsgrupp](feature-groups-to-control-multiple-features.md) eller [release](release-management.md).
+>I Experience Rollouts är en funktionsflagga den mest atomiska enhetskontrollen. Den kan användas fristående för en enskild funktion, eller kombineras med andra flaggor i en [funktionsgrupp](feature-groups-to-control-multiple-features.md).

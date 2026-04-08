@@ -1,13 +1,13 @@
 ---
 title: Funktionsflaggor för att aktivera och inaktivera funktioner
 description: Lär dig hur funktionsflaggor i Experience Rollouts gör att du kan styra funktionstillgänglighet, hantera beroenden och minska distributionsriskerna.
-source-git-commit: 1c8fd9b42d08f657b4e6b16efae86faa04d15565
+exl-id: 627775e8-9b17-4bc7-9565-07a438ae8ed7
+source-git-commit: fcb1d36fc92b3954a902d818a98f579672c577e9
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # Funktionsflaggor för att aktivera och inaktivera funktioner {#feature-flags}
 
@@ -44,4 +44,3 @@ En funktionsflagga i Experience Rollouts följer denna normala livscykel:
 1. En utvecklare skapar en funktionsflagga och testar den separat utan att exponera den för andra användare.
 2. En produktägare länkar en målgrupp till flaggan, vilket gör funktionen synlig för en definierad uppsättning externa användare.
 3. Flaggan kan läggas till i en [funktionsgrupp](feature-groups-to-control-multiple-features.md) som ska hanteras tillsammans med relaterade flaggor.
-4. Flaggan kan läggas till i en [release](release-management.md) för samarbete mellan team.
