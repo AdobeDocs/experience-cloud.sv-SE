@@ -52,7 +52,7 @@ Se till att dessa tillägg är installerade i din mobila datainsamling och ingå
    | Datauppsättnings-ID | Adobe Experience Platform-datauppsättnings-ID för analyshändelsedata |
 
 1. Välj **Spara**.
-1. Uppdatera konfigurationen genom att följa [publiceringsprocessen](https://experienceleague.adobe.com/en/docs/experience-platform/tags/publish/overview).
+1. Uppdatera konfigurationen genom att följa [publiceringsprocessen](https://experienceleague.adobe.com/sv/docs/experience-platform/tags/publish/overview).
 
 ### Hämta miljöfil-ID {#environment-file-id}
 
@@ -187,7 +187,7 @@ Registrera din `Application`-klass i `AndroidManifest.xml`:
 
 | Metod | Obligatoriskt | Beskrivning |
 |---|---|---|
-| `withIdentity(namespace, id)` | Nej | Första argumentet: identitetsnamnområde (se [Adobe Identity namespaces](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces)). Andra argumentet: identitetsvärde. Inkludera detta när du vill att namnutrymmet och ID ska representeras i analysen för utvärderingen. Om det inte anges används ECID som standard i analysen. Detta används inte för att fatta beslut om aktivering av funktioner. |
+| `withIdentity(namespace, id)` | Nej | Första argumentet: identitetsnamnområde (se [Adobe Identity namespaces](https://experienceleague.adobe.com/sv/docs/experience-platform/identity/features/namespaces)). Andra argumentet: identitetsvärde. Inkludera detta när du vill att namnutrymmet och ID ska representeras i analysen för utvärderingen. Om det inte anges används ECID som standard i analysen. Detta används inte för att fatta beslut om aktivering av funktioner. |
 | `withAttributes(map)` | Nej | `Map<String, List<String>>`. Nyckel är det kontextattributnamn som används av dina utrullningsregler (till exempel `locale`, `platform`, `appVersion`, `deviceType`). Värde är en lista över möjliga attributvärden för den aktuella användaren/sessionen (till exempel `["en_US"]` eller `["phone"]`). |
 
 **Kotlin**
